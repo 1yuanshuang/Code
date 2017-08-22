@@ -1,0 +1,9 @@
+c:\users\y0019.synthflex\documents\visual studio 2017\Projects\TestXml\TestXml\bin\Debug\TestXml.exe.config
+c:\users\y0019.synthflex\documents\visual studio 2017\Projects\TestXml\TestXml\bin\Debug\TestXml.exe
+c:\users\y0019.synthflex\documents\visual studio 2017\Projects\TestXml\TestXml\bin\Debug\TestXml.pdb
+c:\users\y0019.synthflex\documents\visual studio 2017\Projects\TestXml\TestXml\obj\Debug\TestXml.Properties.Resources.resources
+c:\users\y0019.synthflex\documents\visual studio 2017\Projects\TestXml\TestXml\obj\Debug\TestXml.csproj.GenerateResource.Cache
+c:\users\y0019.synthflex\documents\visual studio 2017\Projects\TestXml\TestXml\obj\Debug\TestXml.exe
+c:\users\y0019.synthflex\documents\visual studio 2017\Projects\TestXml\TestXml\obj\Debug\TestXml.pdb
+c:\users\y0019.synthflex\documents\visual studio 2017\Projects\TestXml\TestXml\obj\Debug\TestXml.Form1.resources
+c:\users\y0019.synthflex\documents\visual studio 2017\Projects\TestXml\TestXml\obj\Debug\TestXml.csprojResolveAssemblyReference.cache

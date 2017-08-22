@@ -1,0 +1,15 @@
+c:\users\y0019.synthflex\documents\visual studio 2017\Projects\WindowsFormsApp6\WindowsFormsApp6\bin\Debug\WindowsFormsApp6.exe.config
+c:\users\y0019.synthflex\documents\visual studio 2017\Projects\WindowsFormsApp6\WindowsFormsApp6\bin\Debug\WindowsFormsApp6.exe
+c:\users\y0019.synthflex\documents\visual studio 2017\Projects\WindowsFormsApp6\WindowsFormsApp6\bin\Debug\WindowsFormsApp6.pdb
+c:\users\y0019.synthflex\documents\visual studio 2017\Projects\WindowsFormsApp6\WindowsFormsApp6\obj\Debug\WindowsFormsApp6.Properties.Resources.resources
+c:\users\y0019.synthflex\documents\visual studio 2017\Projects\WindowsFormsApp6\WindowsFormsApp6\obj\Debug\WindowsFormsApp6.csproj.GenerateResource.Cache
+c:\users\y0019.synthflex\documents\visual studio 2017\Projects\WindowsFormsApp6\WindowsFormsApp6\obj\Debug\WindowsFormsApp6.exe
+c:\users\y0019.synthflex\documents\visual studio 2017\Projects\WindowsFormsApp6\WindowsFormsApp6\obj\Debug\WindowsFormsApp6.pdb
+C:\Users\y0019.SYNTHFLEX\Documents\Visual Studio 2017\Projects\网上售票\WindowsFormsApp6\bin\Debug\WindowsFormsApp6.exe.config
+C:\Users\y0019.SYNTHFLEX\Documents\Visual Studio 2017\Projects\网上售票\WindowsFormsApp6\bin\Debug\WindowsFormsApp6.exe
+C:\Users\y0019.SYNTHFLEX\Documents\Visual Studio 2017\Projects\网上售票\WindowsFormsApp6\bin\Debug\WindowsFormsApp6.pdb
+C:\Users\y0019.SYNTHFLEX\Documents\Visual Studio 2017\Projects\网上售票\WindowsFormsApp6\obj\Debug\WindowsFormsApp6.csprojResolveAssemblyReference.cache
+C:\Users\y0019.SYNTHFLEX\Documents\Visual Studio 2017\Projects\网上售票\WindowsFormsApp6\obj\Debug\WindowsFormsApp6.Properties.Resources.resources
+C:\Users\y0019.SYNTHFLEX\Documents\Visual Studio 2017\Projects\网上售票\WindowsFormsApp6\obj\Debug\WindowsFormsApp6.csproj.GenerateResource.Cache
+C:\Users\y0019.SYNTHFLEX\Documents\Visual Studio 2017\Projects\网上售票\WindowsFormsApp6\obj\Debug\WindowsFormsApp6.exe
+C:\Users\y0019.SYNTHFLEX\Documents\Visual Studio 2017\Projects\网上售票\WindowsFormsApp6\obj\Debug\WindowsFormsApp6.pdb

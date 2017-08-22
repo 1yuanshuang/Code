@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Tools>
+  　<MainTool id="10" title="后退" image="C:\Users\y0019.SYNTHFLEX\Desktop\back.png">
+    </MainTool>
+
+  <MainTool id="11" title="前进">
+  </MainTool>
+
+  <MainTool id="12" title="保存">　
+  </MainTool>
+
+  <MainTool id="13" title="另存为">
+  </MainTool>
+
+  <MainTool id="14" title="启动">
+  </MainTool>
+
+  <MainTool id="15" title="Debug">
+  </MainTool>
+
+  <MainTool id="16" title="语言">
+    　　<SubTool id="161">
+      　　　<Title>简体中文</Title>      　　
+        </SubTool>
+    
+     　 <SubTool id="162">
+      　　　<Title>英文</Title>     　　
+       </SubTool>   
+  </MainTool>
+
+</Tools>

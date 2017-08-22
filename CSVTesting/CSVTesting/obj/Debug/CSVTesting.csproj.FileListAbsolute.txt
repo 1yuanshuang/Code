@@ -1,0 +1,6 @@
+c:\users\y0019.synthflex\documents\visual studio 2017\Projects\CSVTesting\CSVTesting\obj\Debug\CSVTesting.csprojResolveAssemblyReference.cache
+c:\users\y0019.synthflex\documents\visual studio 2017\Projects\CSVTesting\CSVTesting\bin\Debug\CSVTesting.exe.config
+c:\users\y0019.synthflex\documents\visual studio 2017\Projects\CSVTesting\CSVTesting\bin\Debug\CSVTesting.exe
+c:\users\y0019.synthflex\documents\visual studio 2017\Projects\CSVTesting\CSVTesting\bin\Debug\CSVTesting.pdb
+c:\users\y0019.synthflex\documents\visual studio 2017\Projects\CSVTesting\CSVTesting\obj\Debug\CSVTesting.exe
+c:\users\y0019.synthflex\documents\visual studio 2017\Projects\CSVTesting\CSVTesting\obj\Debug\CSVTesting.pdb

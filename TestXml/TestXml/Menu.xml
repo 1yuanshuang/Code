@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Menus>
+ 　<MainMenu id="10" title="文件(F)">
+    　　<SubMenu id="101">
+      　　　<Title>打开文件</Title>      　　
+       </SubMenu>
+    　<SubMenu id="102">
+      　　　<Title>关闭文件</Title>     　　
+      </SubMenu>
+
+    <SubMenu id="103">
+      　　　<Title>退出</Title>     　　
+    </SubMenu>
+  </MainMenu>
+  
+  <MainMenu id="11" title="编辑(E)">
+    　　<SubMenu id="111">
+      　　　<Title>剪切</Title>     　　
+        </SubMenu>
+    　　<SubMenu id="112">
+      　　　<Title>复制</Title>     　　
+        </SubMenu>
+    　　<SubMenu id="113">
+      　　　<Title>粘贴</Title>   　　
+       </SubMenu> 　
+  </MainMenu>
+
+  <MainMenu id="12" title="视图(V)">
+    　　<SubMenu id="121">
+      　　　<Title>打开</Title>    　　
+        </SubMenu>
+    　　<SubMenu id="122">
+      　　　<Title>输出</Title>   　　
+       </SubMenu>
+    　 <SubMenu id="123">
+      　　　<Title>工具箱</Title>   　　
+       </SubMenu>  　
+  </MainMenu>
+
+  <MainMenu id="13" title="项目(P)">
+    　　<SubMenu id="131">
+      　　　<Title>添加组件</Title>    　　
+    </SubMenu>
+    　　<SubMenu id="132">
+      　　　<Title>添加类</Title>   　　
+    </SubMenu>
+    　 <SubMenu id="133">
+      　　　<Title>添加用户控件</Title>   　　
+    </SubMenu>  　
+  </MainMenu>
+
+  <MainMenu id="14" title="生成(B)">
+    　　<SubMenu id="141">
+      　　　<Title>生成解决方案</Title>    　　
+    </SubMenu>
+    　　<SubMenu id="142">
+      　　　<Title>重新生成解决方案</Title>   　　
+    </SubMenu>
+    　 <SubMenu id="143">
+      　　　<Title>清理解决方案</Title>   　　
+    </SubMenu>  　
+  </MainMenu>
+
+  <MainMenu id="15" title="调试(D)"> 　　 　
+  </MainMenu>
+  
+  <MainMenu id="16" title="团队(M)">   
+  </MainMenu>
+  
+   <MainMenu id="17" title="XML(X)"> 　　 　
+  </MainMenu>
+  
+  <MainMenu id="18" title="工具(T)">   
+  </MainMenu>
+
+  <MainMenu id="19" title="测试(S)">
+  </MainMenu>
+
+  <MainMenu id="20" title="分析(N)">
+  </MainMenu>
+
+  <MainMenu id="21" title="窗口(W)">
+  </MainMenu>
+
+  <MainMenu id="22" title="帮助(H)">
+  </MainMenu>
+  
+</Menus>
