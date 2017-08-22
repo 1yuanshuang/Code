@@ -1,0 +1,9 @@
+c:\users\y0019.synthflex\documents\visual studio 2017\Projects\TestDataBind\TestDataBind\bin\Debug\TestDataBind.exe.config
+c:\users\y0019.synthflex\documents\visual studio 2017\Projects\TestDataBind\TestDataBind\bin\Debug\TestDataBind.exe
+c:\users\y0019.synthflex\documents\visual studio 2017\Projects\TestDataBind\TestDataBind\bin\Debug\TestDataBind.pdb
+c:\users\y0019.synthflex\documents\visual studio 2017\Projects\TestDataBind\TestDataBind\obj\Debug\TestDataBind.Form1.resources
+c:\users\y0019.synthflex\documents\visual studio 2017\Projects\TestDataBind\TestDataBind\obj\Debug\TestDataBind.Properties.Resources.resources
+c:\users\y0019.synthflex\documents\visual studio 2017\Projects\TestDataBind\TestDataBind\obj\Debug\TestDataBind.csproj.GenerateResource.Cache
+c:\users\y0019.synthflex\documents\visual studio 2017\Projects\TestDataBind\TestDataBind\obj\Debug\TestDataBind.exe
+c:\users\y0019.synthflex\documents\visual studio 2017\Projects\TestDataBind\TestDataBind\obj\Debug\TestDataBind.pdb
+c:\users\y0019.synthflex\documents\visual studio 2017\Projects\TestDataBind\TestDataBind\obj\Debug\TestDataBind.csprojResolveAssemblyReference.cache

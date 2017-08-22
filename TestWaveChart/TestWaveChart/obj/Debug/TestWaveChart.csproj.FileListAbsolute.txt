@@ -1,0 +1,10 @@
+c:\users\y0019.synthflex\documents\visual studio 2017\Projects\TestWaveChart\TestWaveChart\bin\Debug\TestWaveChart.exe.config
+c:\users\y0019.synthflex\documents\visual studio 2017\Projects\TestWaveChart\TestWaveChart\bin\Debug\TestWaveChart.exe
+c:\users\y0019.synthflex\documents\visual studio 2017\Projects\TestWaveChart\TestWaveChart\bin\Debug\TestWaveChart.pdb
+c:\users\y0019.synthflex\documents\visual studio 2017\Projects\TestWaveChart\TestWaveChart\obj\Debug\TestWaveChart.Properties.Resources.resources
+c:\users\y0019.synthflex\documents\visual studio 2017\Projects\TestWaveChart\TestWaveChart\obj\Debug\TestWaveChart.WaveChart.resources
+c:\users\y0019.synthflex\documents\visual studio 2017\Projects\TestWaveChart\TestWaveChart\obj\Debug\TestWaveChart.csproj.GenerateResource.Cache
+c:\users\y0019.synthflex\documents\visual studio 2017\Projects\TestWaveChart\TestWaveChart\obj\Debug\TestWaveChart.exe
+c:\users\y0019.synthflex\documents\visual studio 2017\Projects\TestWaveChart\TestWaveChart\obj\Debug\TestWaveChart.pdb
+c:\users\y0019.synthflex\documents\visual studio 2017\Projects\TestWaveChart\TestWaveChart\obj\Debug\TestWaveChart.Form1.resources
+C:\Users\y0019.SYNTHFLEX\documents\visual studio 2017\Projects\TestWaveChart\TestWaveChart\obj\Debug\TestWaveChart.csprojResolveAssemblyReference.cache
