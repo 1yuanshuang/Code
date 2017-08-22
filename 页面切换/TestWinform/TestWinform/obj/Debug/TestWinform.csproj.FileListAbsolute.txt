@@ -1,0 +1,13 @@
+c:\users\y0019.synthflex\documents\visual studio 2017\Projects\TestWinform\TestWinform\bin\Debug\TestWinform.exe.config
+c:\users\y0019.synthflex\documents\visual studio 2017\Projects\TestWinform\TestWinform\bin\Debug\TestWinform.exe
+c:\users\y0019.synthflex\documents\visual studio 2017\Projects\TestWinform\TestWinform\bin\Debug\TestWinform.pdb
+c:\users\y0019.synthflex\documents\visual studio 2017\Projects\TestWinform\TestWinform\obj\Debug\TestWinform.Form1.resources
+c:\users\y0019.synthflex\documents\visual studio 2017\Projects\TestWinform\TestWinform\obj\Debug\TestWinform.Properties.Resources.resources
+c:\users\y0019.synthflex\documents\visual studio 2017\Projects\TestWinform\TestWinform\obj\Debug\TestWinform.csproj.GenerateResource.Cache
+c:\users\y0019.synthflex\documents\visual studio 2017\Projects\TestWinform\TestWinform\obj\Debug\TestWinform.exe
+c:\users\y0019.synthflex\documents\visual studio 2017\Projects\TestWinform\TestWinform\obj\Debug\TestWinform.pdb
+c:\users\y0019.synthflex\documents\visual studio 2017\Projects\TestWinform\TestWinform\obj\Debug\TestWinform.windows1.resources
+c:\users\y0019.synthflex\documents\visual studio 2017\Projects\TestWinform\TestWinform\obj\Debug\TestWinform.Windows2.resources
+c:\users\y0019.synthflex\documents\visual studio 2017\Projects\TestWinform\TestWinform\obj\Debug\TestWinform.Windows3.resources
+c:\users\y0019.synthflex\documents\visual studio 2017\Projects\TestWinform\TestWinform\obj\Debug\TestWinform.csprojResolveAssemblyReference.cache
+c:\users\y0019.synthflex\documents\visual studio 2017\Projects\TestWinform\TestWinform\obj\Debug\TestWinform.Windows4.resources
