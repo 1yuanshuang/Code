@@ -1,0 +1,9 @@
+c:\users\y0019.synthflex\documents\visual studio 2017\Projects\dataBind\dataBind\bin\Debug\dataBind.exe.config
+c:\users\y0019.synthflex\documents\visual studio 2017\Projects\dataBind\dataBind\bin\Debug\dataBind.exe
+c:\users\y0019.synthflex\documents\visual studio 2017\Projects\dataBind\dataBind\bin\Debug\dataBind.pdb
+c:\users\y0019.synthflex\documents\visual studio 2017\Projects\dataBind\dataBind\obj\Debug\dataBind.csprojResolveAssemblyReference.cache
+c:\users\y0019.synthflex\documents\visual studio 2017\Projects\dataBind\dataBind\obj\Debug\dataBind.Form1.resources
+c:\users\y0019.synthflex\documents\visual studio 2017\Projects\dataBind\dataBind\obj\Debug\dataBind.Properties.Resources.resources
+c:\users\y0019.synthflex\documents\visual studio 2017\Projects\dataBind\dataBind\obj\Debug\dataBind.csproj.GenerateResource.Cache
+c:\users\y0019.synthflex\documents\visual studio 2017\Projects\dataBind\dataBind\obj\Debug\dataBind.exe
+c:\users\y0019.synthflex\documents\visual studio 2017\Projects\dataBind\dataBind\obj\Debug\dataBind.pdb
