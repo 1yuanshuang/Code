@@ -1,0 +1,12 @@
+C:\Users\M0015\Desktop\Get all handles of a process\obj\x86\Debug\Get all handles of a process.csproj.CoreCompileInputs.cache
+C:\Users\M0015\Desktop\Get all handles of a process\bin\x86\Debug\马强.exe
+C:\Users\M0015\Desktop\Get all handles of a process\bin\x86\Debug\马强.pdb
+C:\Users\M0015\Desktop\Get all handles of a process\obj\x86\Debug\马强.exe
+C:\Users\M0015\Desktop\Get all handles of a process\obj\x86\Debug\马强.pdb
+C:\Users\M0015\Desktop\Get all handles of a process\obj\x86\Debug\Get all handles of a process.csprojResolveAssemblyReference.cache
+C:\Users\y0019.SYNTHFLEX\Desktop\Get all handles of a process\bin\x86\Debug\马强.exe
+C:\Users\y0019.SYNTHFLEX\Desktop\Get all handles of a process\bin\x86\Debug\马强.pdb
+C:\Users\y0019.SYNTHFLEX\Desktop\Get all handles of a process\obj\x86\Debug\Get all handles of a process.csprojResolveAssemblyReference.cache
+C:\Users\y0019.SYNTHFLEX\Desktop\Get all handles of a process\obj\x86\Debug\Get all handles of a process.csproj.CoreCompileInputs.cache
+C:\Users\y0019.SYNTHFLEX\Desktop\Get all handles of a process\obj\x86\Debug\马强.exe
+C:\Users\y0019.SYNTHFLEX\Desktop\Get all handles of a process\obj\x86\Debug\马强.pdb

@@ -34,21 +34,32 @@ namespace LinqTest
             {
                 if(p.MainModule!=null)
                 {
-                    label10.Text = p.ProcessName;
-                    label11.Text = p.MainModule.FileVersionInfo.FileDescription;
                     string path = "";
                     path = p.MainModule.FileName.ToString();
-                    label12.Text = path;
-                    label13.Text = (p.PrivateMemorySize64 / 1024).ToString();
+                    FileInfo fi = new FileInfo(path);
 
+                    label10.Text = p.ProcessName;
+                    label11.Text = p.MainModule.FileVersionInfo.FileDescription;
+                    label12.Text = path;
+                    label13.Text = Math.Ceiling(fi.Length / 1024.0) + " KB";
                     totalMemery += p.PrivateMemorySize64 / 1024;
                     label14.Text = totalMemery.ToString();
-
-                    FileInfo fi = new FileInfo(path);
                     label15.Text = fi.CreationTime.ToString();
                     label16.Text = fi.LastWriteTime.ToString();
                     label17.Text = fi.LastAccessTime.ToString();
                     textBox1.Text = p.ProcessName;
+
+                    FileVersionInfo info = FileVersionInfo.GetVersionInfo(path);
+                    label33.Text = info.FileDescription;
+                    label34.Text = fi.Extension;
+                    label35.Text = info.FileVersion;
+                    label36.Text = info.ProductName;
+                    label37.Text = info.ProductVersion;
+                    label38.Text = info.LegalCopyright;
+                    label39.Text = Math.Ceiling(fi.Length / 1024.0) + " KB";
+                    label40.Text = fi.LastWriteTime.ToString();
+                    label41.Text = info.Language;
+                    label42.Text = info.OriginalFilename;
                 }
 
             }
@@ -57,6 +68,11 @@ namespace LinqTest
             {
                 MessageBox.Show(this, ex.Message, "出现异常", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+        }
+
+        private void label24_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

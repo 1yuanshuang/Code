@@ -1,0 +1,11 @@
+D:\ToolTuCode\TempSourceCode\Get all handles of a process\obj\Debug\ResolveAssemblyReference.cache
+D:\ToolTuCode\TempSourceCode\Get all handles of a process\bin\Debug\Get all handles of a process.exe
+D:\ToolTuCode\TempSourceCode\Get all handles of a process\bin\Debug\Get all handles of a process.pdb
+D:\ToolTuCode\TempSourceCode\Get all handles of a process\obj\Debug\Get all handles of a process.exe
+D:\ToolTuCode\TempSourceCode\Get all handles of a process\obj\Debug\Get all handles of a process.pdb
+C:\Users\M0015\Desktop\Get all handles of a process\bin\Debug\Get all handles of a process.exe
+C:\Users\M0015\Desktop\Get all handles of a process\bin\Debug\Get all handles of a process.pdb
+C:\Users\M0015\Desktop\Get all handles of a process\obj\Debug\Get all handles of a process.csproj.CoreCompileInputs.cache
+C:\Users\M0015\Desktop\Get all handles of a process\obj\Debug\Get all handles of a process.exe
+C:\Users\M0015\Desktop\Get all handles of a process\obj\Debug\Get all handles of a process.pdb
+C:\Users\M0015\Desktop\Get all handles of a process\obj\Debug\Get all handles of a process.csprojResolveAssemblyReference.cache

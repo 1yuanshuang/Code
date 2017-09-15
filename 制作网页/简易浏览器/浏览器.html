@@ -1,0 +1,507 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html;charset=gbk" charset="utf-8"/> 
+<title>百度一下你就知道</title>
+
+<style type="text/css">
+a:link {
+ text-decoration: none;
+}
+a:visited {
+ text-decoration: none;
+}
+a:hover {
+ text-decoration: underline;
+}
+a:active {
+ text-decoration: none;
+}
+</style>
+
+<style>
+/* 下拉按钮样式 */
+.dropbtn {
+    color: blue;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+/* 容器 <div> - 需要定位下拉内容 */
+.dropdown {
+    position: relative;left:1500px; top:10px;
+}
+
+/* 下拉内容 (默认隐藏) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+}
+
+/* 下拉菜单的链接 */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* 鼠标移上去后修改下拉菜单链接颜色 */
+.dropdown-content a:hover {background-color: blue}
+
+/* 在鼠标移上去后显示下拉菜单 */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* 当下拉内容显示后修改下拉按钮的背景颜色 */
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+.dropdown-content {
+    right: 0;
+}
+</style>
+ 
+<style>
+.soutu-btn {
+	z-index: 1;
+	position: absolute;
+	right: 11px;
+	top: 50%;
+	margin-top: -8px;
+	height: 16px;
+	width: 18px;
+	background: #fff url(https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/soutu/img/camera_new_5606e8f.png) no-repeat;
+	background-image: -webkit-image-set(url(https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/soutu/img/camera_new_5606e8f.png) 1x, url(https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/soutu/img/camera_new_x2_fb6c085.png) 2x);
+	background-image: -moz-image-set(url(https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/soutu/img/camera_new_5606e8f.png) 1x, url(https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/soutu/img/camera_new_x2_fb6c085.png) 2x);
+	background-image: -o-image-set(url(https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/soutu/img/camera_new_5606e8f.png) 1x, url(https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/soutu/img/camera_new_x2_fb6c085.png) 2x);
+	background-image: -ms-image-set(url(https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/soutu/img/camera_new_5606e8f.png) 1x, url(https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/soutu/img/camera_new_x2_fb6c085.png) 2x);
+	cursor: pointer
+}
+
+.s_ipt {
+	width: 526px;
+	height: 22px;
+	font: 16px/18px arial;
+	line-height: 22px;
+	margin: 6px 0 0 7px;
+	padding: 0;
+	background: transparent;
+	border: 0;
+	outline: 0;
+	-webkit-appearance: none
+}
+
+#kw {
+	position: relative
+}
+
+.quickdelete-wrap {
+	position: relative
+}
+.quickdelete-wrap input {
+	width: 500px
+}
+
+</style>
+<style type="text/css">
+  #head{width:400px;
+        height:30px;}
+  #head ul{padding:0; margin:0;}
+  #head ul li{ list-style:none; float:left; text-decoration:none; display:block; 
+               width:80px;padding:5px; margin:0px 10px 0px 0px; position:relative;}
+  #head ul li a{ text-decoration:none; color:#000000;}
+  #head ul li a:visited{ text-decoration:none; color:#000000;}
+  
+ #L1{
+ background-color:#9CC;
+ border-top-color: #F6C;
+ border-right-color: #F6C;
+ border-left-color: #F6C;
+  }
+  #L2{
+   background-color:#CC9;
+   border-color:#309;
+   margin-left:1px;
+  }
+ 
+ #L3{
+   background-color:#FF3;
+   border-color:#360;
+  }
+ #L4{
+   background-color:#690;
+   border-color:#360;
+  } 
+  
+#d1{
+ background-color:#9CC;
+ border:1px solid #C39;
+ width:400px;
+  height:220px;
+  margin-top:0px;
+  position:absolute;
+  z-index:1;
+   
+ }
+#d2{
+ background-color:#CC9;
+ border:1px solid #309;
+    display:none;
+    width:400px;
+    height:220px;
+    margin-top:0px;
+    position:absolute;
+    z-index:1;
+ }
+#d3{
+ background-color:#FF3;
+ border:1px solid #360;
+ display:none;
+ width:400px;
+  height:220px;
+  margin-top:0px;
+  position:absolute;
+  z-index:1;
+ }
+ 
+#d4{
+ background-color:#690;
+ border:1px solid #360;
+ display:none;
+  width:400px;
+  position:absolute;
+  height:220px;
+  margin-top:0px;
+  z-index:1;
+ }
+</style>
+
+<script language="javascript">
+function Tab(num)
+{
+    var i;
+    for(i=1;i<=4;i++)
+    {
+        if(i==num)
+           document.getElementById("d"+i).style.display="block";
+         else
+           document.getElementById("d"+i).style.display="none";
+    }
+}
+</script>
+
+<style type="text/css">
+            body {
+                padding: 0;
+                margin: 0 auto;
+            }
+			
+            #center{
+				height: 200px;
+                line-height: 40px;
+				left:500
+                bottom: 600;
+                width: 100%;
+                text-align: center;
+                font-family: Arial;
+                font-size: 22px;
+                letter-spacing: 1px;
+			}
+			
+            #footer {
+                height: 120px;
+                line-height: 40px;
+                position: fixed;
+                bottom: 0;
+                width: 100%;
+                text-align: center;
+                background: #333;
+                color: #fff;
+                font-family: Arial;
+                font-size: 18px;
+                letter-spacing: 1px;
+            }
+
+            .content {
+                height: 900px;
+                width: 100%;
+                text-align: center;
+            }
+</style>
+
+<style> 
+#table table{border:1px solid #F00} 
+#table td{padding:10px;}
+</style> 
+
+<style> 
+#table1 table{border:1px solid #F00} 
+#table1 td{padding:10px;}
+</style> 
+
+<script>
+function load()
+{  
+  document.getElementById("target").click(); 
+  document.getElementById("target1").click(); 
+} 
+function test(id)
+{ 
+	if (id == 'target' )
+	{
+		 document.getElementById("table").style.display = 'none' ;
+		 document.getElementById("table1").style.display = 'block' ;
+	}
+	else
+	{
+		 document.getElementById("table1").style.display = 'none' ;
+		 document.getElementById("table").style.display = 'block' ;
+	}
+}
+</script>
+
+</head>
+
+<body onload="load()">
+<div id="table" style="position:absolute; left:1400px; top:400px;display:none"> 
+	<table  width="400" border="0" cellspacing="0" cellpadding="0"> 
+	<tr> 
+		<td width="105"><a href="#"><b>实时热点</b></a></td> 
+		<td width="181"><button id="target" onclick="test(id)">换一换</button> </td> 
+	</tr> 
+	<tr> 
+		<td><a href="#">不让座大妈坐腿上</a></td> 
+		<td>张柏芝包飞机返港</td> 
+	</tr> 
+	<tr> 
+		<td>让座太慢被掌掴</td> 
+		<td>夜莺眼睛被戳瞎</td> 
+	</tr> 
+	
+	<tr> 
+		<td>俄炸死IS头目</td> 
+		<td>18号台风泰利</td> 
+	</tr> 
+	
+	
+	<tr> 
+		<td>英拉乘车出逃画面</td> 
+		<td>宝马追尾出警警车</td> 
+	</tr> 
+	
+	<tr> 
+		<td>埃及发现古墓</td> 
+		<td>22万遗落高铁</td> 
+	</tr> 
+	
+	<tr> 
+		<td>泰迪正式入名人堂</td> 
+		<td>李晓霞大婚</td> 
+	</tr> 
+	
+	<tr> 
+		<td>巴西多车相撞</td> 
+		<td>韩媒回顾萨德部署</td> 
+	</tr> 
+	
+	<tr> 
+		<td>张玉华老将军逝世</td> 
+		<td>陈伟霆大秀肌肉照</td> 
+	</tr> 
+	
+	</table> 
+</div>
+
+
+<body onload="load()">
+<div id="table1" style="position:absolute; left:1400px; top:400px;display:none"> 
+	<table  width="400" border="0" cellspacing="0" cellpadding="0"> 
+	<tr> 
+		<td width="105"><a href="#"><b>实时热点</b></a></td> 
+		<td width="181"><input type="button" value="换一换" id="target1" onclick="test()"></td> 
+	</tr> 
+	<tr> 
+		<td><a href="#">11111111</a></td> 
+		<td>2222222</td> 
+	</tr> 
+	<tr> 
+		<td>4444444444</td> 
+		<td>5555555555</td> 
+	</tr> 
+	
+	<tr> 
+		<td>333333333</td> 
+		<td>666666666</td> 
+	</tr> 
+	
+	
+	<tr> 
+		<td>99999999999999</td> 
+		<td>77777777777777</td> 
+	</tr> 
+	
+	<tr> 
+		<td>sguwidswokixs</td> 
+		<td>ghdtrgfcdffdf</td> 
+	</tr> 
+	
+	<tr> 
+		<td>888888888888</td> 
+		<td>7yjyhgfhhnfd</td> 
+	</tr> 
+	
+	<tr> 
+		<td>gfbhdghyrtyt</td> 
+		<td>thygfhftyry7</td> 
+	</tr> 
+	
+	<tr> 
+		<td>tyghtyjtjuye</td> 
+		<td>ytryuyjuyjut</td> 
+	</tr> 
+	
+	</table> 
+</div>
+
+
+<div class="dropdown" style="position:absolute; left:1400px; top:50px" >
+		<a href="http://news.baidu.com/ns?cl=2&rn=20&tn=news&word=" wdfield="word"  onmousedown="return c({'fm':'tab','tab':'news'})" >新闻&nbsp;</a>
+		<a href="http://tieba.baidu.com/f?kw=&fr=wwwt" wdfield="kw"  onmousedown="return c({'fm':'tab','tab':'tieba'})">贴吧&nbsp;</a>
+		<a href="http://zhidao.baidu.com/q?ct=17&pn=0&tn=ikaslist&rn=10&word=&fr=wwwt" wdfield="word"  onmousedown="return c({'fm':'tab','tab':'zhidao'})">知道&nbsp;</a>
+		<a href="http://music.baidu.com/search?fr=ps&ie=utf-8&key=" wdfield="key"  onmousedown="return c({'fm':'tab','tab':'music'})" style="color:#f60;">音乐&nbsp;</a>
+		<a href="http://image.baidu.com/search/index?tn=baiduimage&ps=1&ct=201326592&lm=-1&cl=2&nc=1&ie=utf-8&word=" wdfield="word"  onmousedown="return c({'fm':'tab','tab':'pic'})">图片&nbsp;</a>
+		<a href="http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=25&ie=utf-8&word=" wdfield="word"   onmousedown="return c({'fm':'tab','tab':'video'})">视频&nbsp;</a>
+		<a href="http://map.baidu.com/m?word=&fr=ps01000" wdfield="word"  onmousedown="return c({'fm':'tab','tab':'map'})">地图&nbsp;</a>
+		<a href="http://wenku.baidu.com/search?word=&lm=0&od=0&ie=utf-8" wdfield="word"  onmousedown="return c({'fm':'tab','tab':'wenku'})" >文库&nbsp;</a>
+		
+	
+		<button class="dropbtn">设置</button>
+			<div class="dropdown-content">
+				 <a href="#">搜索设置</a>
+				 <a href="#">高级搜索</a>
+				 <a href="#">关闭预测</a>
+				 <a href="#">搜索历史</a>
+			</div>	
+		<a href="//www.baidu.com/more/"  onmousedown="return c({'fm':'tab','tab':'more'})" style="color:blue;">更多产品&nbsp;</a>
+	</div>
+
+	
+    <div style="position:absolute; left:2px; top:600px" >
+	<div id="head">
+		<ul>
+			 <li id="L1" onclick="Tab(1)"><a href="#">公告信息</a></li>
+			 <li id="L2" onclick="Tab(2)"><a href="#">今日热点</a></li>
+			 <li id="L3" onclick="Tab(3)"><a href="#">最新新闻</a></li>
+			 <li id="L4" onclick="Tab(4)"><a href="#">考试信息</a></li>
+		</ul>
+	</div>
+
+	<div id="d1">
+		<ul>
+		  <li>这里是最新公告信息</li>
+		  <li>这里是最新公告信息</li>
+		  <li>这里是最新公告信息</li>
+		  <li>这里是最新公告信息</li>
+		</ul>
+	</div>
+	
+	<div id="d2">
+		<ul>
+		  <li>这里是今日热点</li>
+		  <li>这里是今日热点</li>
+		  <li>这里是今日热点</li>
+		  <li>这里是今日热点</li>
+		</ul>
+	</div>
+	
+	<div id="d3">
+		<ul>
+		  <li>这里是最新新闻</li>
+		  <li>这里是最新新闻</li>
+		  <li>这里是最新新闻</li>
+		  <li>这里是最新新闻</li>
+		</ul>
+	</div>
+	
+	<div id="d4">
+		<ul>
+		  <li>这里是考试信息</li>
+		  <li>这里是考试信息</li>
+		  <li>这里是考试信息</li>
+		  <li>这里是考试信息</li>
+		</ul>
+	</div>
+	</div>
+
+
+
+
+      <body>
+		<div id="footer"> 
+		<p id="lh">
+		<a id="setf" href="//www.baidu.com/cache/sethelp/help.html" onmousedown="return ns_c({'fm':'behs','tab':'favorites','pos':0})" target="_blank">把百度设为主页&nbsp;&nbsp;</a>
+		<a onmousedown="return ns_c({'fm':'behs','tab':'tj_about'})" href="http://home.baidu.com" style="color:#fff;">关于百度&nbsp;&nbsp;</a>
+		<a onmousedown="return ns_c({'fm':'behs','tab':'tj_about_en'})" href="http://ir.baidu.com">About&nbsp;Baidu</a>
+		<a href="http://www.baidu.com/duty/" onmousedown="return ns_c({'fm':'behs','tab':'tj_duty'})">使用百度前必读</a>
+		<a onmousedown="return ns_c({'fm':'behs','tab':'tj_tuiguang'})" href="http://e.baidu.com/?refer=888">百度推广&nbsp;&nbsp;</a></p><p id="cp">&copy;2017&nbsp;Baidu&nbsp;
+		<a href="http://jianyi.baidu.com/" class="cp-feedback" onmousedown="return ns_c({'fm':'behs','tab':'tj_homefb'})">意见反馈&nbsp;</a>&nbsp;京ICP证030173号&nbsp;<i class="c-icon-icrlogo"></i>&nbsp;
+		<a id="jgwab"  target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11000002000001">京公网安备11000002000001号&nbsp;</a>
+		<i class="c-icon-jgwablogo"></i>
+		</p>
+		</div>
+	</body>
+	
+	<div  style="position:absolute; left:350px; top:520px; >
+    <span class="bg s_ipt_wr quickdelete-wrap">
+
+        <span class="soutu-btn" style="display: block;"></span>
+        <input id="kw" name="wd" class="s_ipt" value="" maxlength="255" autocomplete="off"><a href="javascript:;" id="quickdelete" title="清空" class="quickdelete" style="top: 0px; right: 0px; display: none;"></a>
+    </span>
+    <span class="bg s_btn_wr">
+        <input type="submit" id="su" value="百度一下" class="bg s_btn">
+    </span>
+	</div>
+
+	
+	<body>	
+	  <div id="center"> 
+		<form name="search_form1" target="_blank" onsubmit="return gowhere1(this)">
+		<table width="860" height="360" border="0"  cellpadding="0" cellspacing="0" style=font-family:宋体>
+		<tr>
+		<td>
+	    <TABLE cellPadding=0 cellSpacing=0>
+			<TD><image src="./2.png" style="position:absolute; left:650px; top:20px; "></TD>
+        </TABLE>
+		<TABLE width="860" height="560" style="position:absolute; left:390px; top:0px; ">
+	
+		<TR>
+			<TD width="24%"> </TD>	
+		    <TD width="76%">
+			<INPUT type=radio value=0><FONT  style="FONT-SIZE: 25px">新闻</FONT>              
+			<INPUT CHECKED  type=radio value=0><SPAN class=f12><FONT style="FONT-SIZE: 25px">网页</FONT></SPAN>
+			<INPUT type=radio value=1><SPAN class=f12><FONT  style="FONT-SIZE: 25px">mp3</FONT></SPAN>
+			<INPUT type=radio value=0><FONT  style="FONT-SIZE: 25px">贴吧</FONT>
+			<INPUT type=radio value=0><FONT  style="FONT-SIZE: 25px">图片</FONT>
+		<TABLE align=right border=0 cellPadding=0 cellSpacing=0 width="100%">
+                <TBODY>
+                    <TR>
+                        <TD>
+							<FONT style="FONT-SIZE: 2px">
+							<input id=word name=word size="70"></FONT> 
+							<input type="submit" value="百度搜索"> 
+						</TD>
+					</TR>     
+			    </TBODY>   
+		</TABLE>
+		</TR>					
+       </form>
+	   </div>
+	</body>
+</body>
+</head>
+</html>

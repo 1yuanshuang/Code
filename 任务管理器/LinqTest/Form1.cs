@@ -3,20 +3,22 @@ using System.Diagnostics;
 using System.IO;
 using System.Windows.Forms;
 using System.Management;
+using System.Threading;
+using System.Globalization;
+using System.Runtime.InteropServices;
+using System.Drawing;
+using System.ServiceProcess;
 
 namespace LinqTest
 {
     public partial class Form1 : Form
     {
-       // public ListViewItem lv = new ListViewItem();
         private int length = 100;
         private int index = 0;
-        public int pid=0;
+        public int pid = 0;
 
-        public Form1()
+        public void ListProcess()
         {
-            InitializeComponent();
-            timer1.Interval = 1000;
             this.listView1.BeginUpdate();   //数据更新，UI暂时挂起，直到EndUpdate绘制控件，可以有效避免闪烁并大大提高加载速度
             Process[] pro = Process.GetProcesses();
             for (int i = 0; i < pro.Length; i++)
@@ -37,7 +39,7 @@ namespace LinqTest
 
                 lvi.SubItems.Add(pro[i].WorkingSet64.ToString());
 
-               // lvi.SubItems.Add(pro[i].MainModule.FileVersionInfo.FileDescription);
+                // lvi.SubItems.Add(pro[i].MainModule.FileVersionInfo.FileDescription);
 
                 pro[i].Refresh();
                 this.listView1.Items.Add(lvi);
@@ -49,20 +51,23 @@ namespace LinqTest
                 string mea = s.MemoryAvailable.ToString();
                 label15.Text = mea;
 
-                string no = pro[i].NonpagedSystemMemorySize.ToString();
-                label23.Text = no;
+                //string no = pro[i].NonpagedSystemMemorySize64.ToString();
+                //label23.Text = no;
 
-                string fenye = pro[i].PagedMemorySize.ToString();
-                label22.Text = fenye;
+                //string fenye = pro[i].PagedMemorySize64.ToString();
+                //label22.Text = fenye;
 
-                string xiancheng = pro[i].Threads.Count.ToString();
-                label18.Text = xiancheng;
+                //string xiancheng = pro[i].Threads.Count.ToString();
+                //label18.Text = xiancheng;
+
+                //string jincheng = listView1.Items.Count.ToString();
+                //label19.Text = jincheng;
 
                 DateTime dt = DateTime.Now.AddMilliseconds(0 - Environment.TickCount);
                 label20.Text = dt.ToString();
 
-                string tijiao = (pro[i].PagedMemorySize64 / 1024).ToString();
-                label21.Text = tijiao;
+                //string tijiao = (pro[i].PagedMemorySize64 / 1024).ToString();
+                //label21.Text = tijiao;
 
             }
             this.listView1.EndUpdate();
@@ -75,7 +80,89 @@ namespace LinqTest
             }
         }
 
+        public void ListService()
+        {
+            this.listView2.BeginUpdate();
+            ServiceController[] Services = ServiceController.GetServices();
 
+            foreach (ServiceController svc in Services)
+            {
+                ListViewItem lv = new ListViewItem();
+                lv.Text = svc.ServiceName;
+
+                //if (svc.Status == ServiceControllerStatus.Stopped)
+                //{
+                //    lv.SubItems.Add("");
+                //}
+                //else if (svc.Status == ServiceControllerStatus.Running)
+                //{
+                //    Process[] processes = Process.GetProcessesByName(svc.ServiceName);
+                //    foreach (Process instance in processes)
+                //    {                                             
+                //         lv.SubItems.Add(instance.Id.ToString());
+                //    }
+                //}
+              //  lv.SubItems.Add("");
+                lv.SubItems.Add(svc.ServiceType.ToString());
+                lv.SubItems.Add(svc.Status.ToString());
+
+                listView2.Items.Add(lv);
+            }
+            listView2.EndUpdate();
+        }
+
+        public Form1()
+        {
+            InitializeComponent();
+            ListProcess();
+            ListService();
+            Control.CheckForIllegalCrossThreadCalls = false;
+
+        }
+
+        void contextMenuStrip1_Closed(object sender, ToolStripDropDownClosedEventArgs e)
+        {
+            listView1.ContextMenuStrip = contextMenuStrip2;
+        }
+
+        private void listView1_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                listView1.ContextMenuStrip = null;
+                contextMenuStrip1.Show(listView1, e.Location);
+            }
+
+        }
+
+        private void 隐藏列DToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            //ColumnClickEventArgs c = new ColumnClickEventArgs(0);
+            //c = e as ColumnClickEventArgs;
+            //listView1_ColumnClick(sender,c);
+            listView1.Columns[3].Width = 0;
+        }
+
+
+        private void listView1_ColumnClick(object sender, ColumnClickEventArgs e)
+        {
+            int location = e.Column;
+            listView1.Columns[location].Width = 0;
+        }
+
+        private void Form1_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (e.Button.ToString() == "Right")
+            {
+                object hitobject = listView1.HitTest(e.X, e.Y);
+                if (hitobject.GetType().ToString() == "ColumnHeader")
+                {
+                    listView1.Columns.Remove((ColumnHeader)hitobject);
+                    ((ColumnHeader)hitobject).DisplayIndex = -10000;
+                    ((ColumnHeader)hitobject).Width = 0;
+                }
+            }
+        }
 
         private string GetProcessUserName(int pID)
         {
@@ -109,42 +196,21 @@ namespace LinqTest
             {
                 try
                 {
-                    string proName = listView1.SelectedItems[0].Text;
-                    Process[] p = Process.GetProcessesByName(proName);
-                    p[0].Kill();
-                    p[0].Close();
-
+                    Process ps = Process.GetProcessById(Int32.Parse(listView1.SelectedItems[0].SubItems[1].Text));
+                    ps.Kill();
+                    ps.Close();
+                    listView1.Items.Remove(listView1.SelectedItems[0]);
                     MessageBox.Show("进程关闭成功！");
-                    // GetProcess();
                 }
                 catch
                 {
                     MessageBox.Show("无法关闭此进程！");
                 }
             }
-            //if (listView1.SelectedItems.Count > 0)
-            //{
-
-            //    int pid = Int32.Parse(listView1.SelectedItems[0].SubItems[1].Text);
-            //    Process p = Process.GetProcessById(pid);
-            //    if(p==null)
-            //    {
-            //        return;
-            //    }
-
-            //    if(!p.CloseMainWindow())
-            //    {
-            //        p.Kill();
-
-            //    }
-            //   // p.WaitForExit();
-            //    p.Close();
-
-            //}
-            //else
-            //{
-            //    MessageBox.Show("请选择要终止的进程!");
-            //}
+            else
+            {
+                MessageBox.Show("请选择要终止的进程!");
+            }
 
         }
 
@@ -175,26 +241,26 @@ namespace LinqTest
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            SystemInfo s = new SystemInfo();
-            waveChart2.Draw(s.CpuLoad);
+            //SystemInfo s = new SystemInfo();
+            //waveChart2.Draw(s.CpuLoad);
 
-            if (index == (length - 1))
-            {
-                index = 0;
-            }
-            index++;
+            //if (index == (length - 1))
+            //{
+            //    index = 0;
+            //}
+            //index++;
         }
 
         private void timer2_Tick(object sender, EventArgs e)
         {
-            SystemInfo s = new SystemInfo();
-            waveChart3.Draw(s.PhysicalMemory);
+            //SystemInfo s = new SystemInfo();
+            //waveChart3.Draw(s.PhysicalMemory);
 
-            if (index == (length - 1))
-            {
-                index = 0;
-            }
-            index++;
+            //if (index == (length - 1))
+            //{
+            //    index = 0;
+            //}
+            //index++;
         }
 
 
@@ -203,19 +269,34 @@ namespace LinqTest
             timer1.Start();
             timer2.Start();
             timer3.Start();
+            Thread t = new Thread(new ThreadStart(DeService));
+            t.IsBackground = false;
+            t.Start();
+            contextMenuStrip1.Closed += new ToolStripDropDownClosedEventHandler(contextMenuStrip1_Closed);
+            this.MouseClick += new MouseEventHandler(Form1_MouseClick);
+        }
 
+
+
+        private void DeService()
+        {
+            while (true)
+            {
+                listView1.Refresh();
+                Thread.Sleep(1000);
+            }
         }
 
         private void timer3_Tick(object sender, EventArgs e)
         {
-            SystemInfo s = new SystemInfo();
-            waveChart4.Draw(s.MemoryAvailable);
+            //SystemInfo s = new SystemInfo();
+            //waveChart4.Draw(s.MemoryAvailable);
 
-            if (index == (length - 1))
-            {
-                index = 0;
-            }
-            index++;
+            //if (index == (length - 1))
+            //{
+            //    index = 0;
+            //}
+            //index++;
         }
 
 
@@ -225,12 +306,11 @@ namespace LinqTest
             {
                 try
                 {
-                    string proName = listView1.SelectedItems[0].Text;
-                    Process[] p = Process.GetProcessesByName(proName);
-                    p[0].Kill();
-                    p[0].Close();
+                    Process ps = Process.GetProcessById(Int32.Parse(listView1.SelectedItems[0].SubItems[1].Text));
+                    ps.Kill();
+                    ps.Close();
+                    listView1.Items.Remove(listView1.SelectedItems[0]);
                     MessageBox.Show("进程关闭成功！");
-                    //GetProcess();
                 }
                 catch
                 {
@@ -241,29 +321,6 @@ namespace LinqTest
             {
                 MessageBox.Show("请选择要终止的进程!");
             }
-
-
-            //string proName = listView1.SelectedItems[0].Text;
-            //    foreach (var pTempProcess in Process.GetProcesses())
-            //    {
-            //        try
-            //        {
-            //            string sProcessName = pTempProcess.ProcessName; //获取进程名称
-            //            if (sProcessName == proName)
-            //            {
-            //                string sProcessID = pTempProcess.Id.ToString(); //获取进程ID
-            //                Process pProcessTemp = Process.GetProcessById(Convert.ToInt32(sProcessID));
-
-            //                pProcessTemp.Kill(); //杀死进程
-            //                pProcessTemp.Close();
-            //            }
-            //        }
-            //        catch
-            //        {
-
-            //        }
-            //    }
-
         }
 
 
@@ -271,11 +328,11 @@ namespace LinqTest
         private void 打开文件位置ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             try
-            {            
-                Process ps = Process.GetProcessById(Int32.Parse(listView1.SelectedItems[0].SubItems[1].Text));      
+            {
+                Process ps = Process.GetProcessById(Int32.Parse(listView1.SelectedItems[0].SubItems[1].Text));
 
                 string path = "";
-                path = ps.MainModule.FileName.ToString();            
+                path = ps.MainModule.FileName.ToString();
                 Process.Start("explorer.exe", "/select," + path);
             }
             catch (Exception ex)
@@ -283,36 +340,16 @@ namespace LinqTest
                 MessageBox.Show("获取进程路径出错，Error：" + ex.Message, "失败信息", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
-
-            ////定义一个ProcessStartInfo实例
-            //ProcessStartInfo info = new ProcessStartInfo();
-            ////设置启动进程的初始目录
-            //info.WorkingDirectory = Application.StartupPath;
-            ////设置启动进程的应用程序或文档名
-            //info.FileName = @"test.txt";
-            ////设置启动进程的参数
-            //info.Arguments = "";
-            ////启动由包含进程启动信息的进程资源
-            //try
-            //{
-            //    Process.Start(info);
-            //}
-            //catch (System.ComponentModel.Win32Exception we)
-            //{
-            //    MessageBox.Show(this, we.Message);
-            //    return;
-            //}
-
         }
 
         private void 属性RToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form1 dlg = new Form1();
-            if(listView1.SelectedItems.Count!=0)
+            Form2 dlg = new Form2();
+            if (listView1.SelectedItems.Count != 0)
             {
                 dlg.Text = "进程" + listView1.SelectedItems[0].Text + "属性";
                 dlg.pid = Int32.Parse(listView1.SelectedItems[0].SubItems[1].Text);
-                
+
                 dlg.ShowDialog();
             }
             else
@@ -320,5 +357,72 @@ namespace LinqTest
                 MessageBox.Show("请选择一个进程");
             }
         }
+
+        public static void FindAndKillProcess(int id)
+        {
+            killProcess(id);
+        }
+
+        private static bool killProcess(int pid)
+        {
+            Process[] procs = Process.GetProcesses();
+            for (int i = 0; i < procs.Length; i++)
+            {
+                if (getParentProcess(procs[i].Id) == pid)
+                    killProcess(procs[i].Id);
+            }
+
+            try
+            {
+                Process myProc = Process.GetProcessById(pid);
+                myProc.Kill();
+            }
+
+            catch (ArgumentException)
+            {
+                ;
+            }
+            return true;
+        }
+
+        private static int getParentProcess(int Id)
+        {
+            int parentPid = 0;
+            using (ManagementObject mo = new ManagementObject("win32_process.handle='" + Id.ToString(CultureInfo.InvariantCulture) + "'"))
+            {
+                try
+                {
+                    mo.Get();
+                }
+                catch (ManagementException)
+                {
+                    return -1;
+                }
+                parentPid = Convert.ToInt32(mo["ParentProcessId"], CultureInfo.InvariantCulture);
+            }
+            return parentPid;
+        }
+
+
+        private void 结束进程树TToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FindAndKillProcess(Int32.Parse(listView1.SelectedItems[0].SubItems[1].Text));
+            listView1.Items.Remove(listView1.SelectedItems[0]);
+        }
+
+
+        private void 转到服务SToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedIndex = 2;
+        }
+
+
+        private void 添加列SToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            Form3 dlg = new Form3();
+            dlg.Text ="选择列";
+            dlg.Show();
+        }
     }
+
 }

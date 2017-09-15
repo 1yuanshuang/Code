@@ -37,3 +37,14 @@ C:\Users\Administrator\Desktop\LinqTest\LinqTest\obj\Debug\LinqTest.Properties.R
 C:\Users\Administrator\Desktop\LinqTest\LinqTest\obj\Debug\LinqTest.WaveChart.resources
 C:\Users\Administrator\Desktop\LinqTest\LinqTest\obj\Debug\TestTaskManager.csproj.GenerateResource.Cache
 C:\Users\Administrator\Desktop\LinqTest\LinqTest\obj\Debug\LinqTest.Form2.resources
+C:\Users\y0019.SYNTHFLEX\Desktop\任务管理器\LinqTest\obj\Debug\TestTaskManager.csprojResolveAssemblyReference.cache
+C:\Users\y0019.SYNTHFLEX\Desktop\任务管理器\LinqTest\obj\Debug\LinqTest.Form1.resources
+C:\Users\y0019.SYNTHFLEX\Desktop\任务管理器\LinqTest\obj\Debug\LinqTest.Form2.resources
+C:\Users\y0019.SYNTHFLEX\Desktop\任务管理器\LinqTest\obj\Debug\LinqTest.Properties.Resources.resources
+C:\Users\y0019.SYNTHFLEX\Desktop\任务管理器\LinqTest\obj\Debug\LinqTest.WaveChart.resources
+C:\Users\y0019.SYNTHFLEX\Desktop\任务管理器\LinqTest\obj\Debug\TestTaskManager.csproj.GenerateResource.Cache
+C:\Users\y0019.SYNTHFLEX\Desktop\任务管理器\LinqTest\obj\Debug\LinqTest.exe
+C:\Users\y0019.SYNTHFLEX\Desktop\任务管理器\LinqTest\obj\Debug\LinqTest.pdb
+C:\Users\y0019.SYNTHFLEX\Desktop\任务管理器\LinqTest\bin\Debug\LinqTest.exe.config
+C:\Users\y0019.SYNTHFLEX\Desktop\任务管理器\LinqTest\bin\Debug\LinqTest.exe
+C:\Users\y0019.SYNTHFLEX\Desktop\任务管理器\LinqTest\bin\Debug\LinqTest.pdb
