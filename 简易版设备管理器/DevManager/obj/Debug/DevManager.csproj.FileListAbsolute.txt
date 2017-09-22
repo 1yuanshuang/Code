@@ -1,0 +1,17 @@
+c:\users\y0019.synthflex\source\repos\DevManager\DevManager\bin\Debug\DevManager.exe
+C:\Users\y0019.SYNTHFLEX\source\repos\DevManager\DevManager\bin\Debug\DevManager.exe.config
+C:\Users\y0019.SYNTHFLEX\source\repos\DevManager\DevManager\obj\Debug\DevManager.Form1.resources
+C:\Users\y0019.SYNTHFLEX\source\repos\DevManager\DevManager\obj\Debug\DevManager.Properties.Resources.resources
+C:\Users\y0019.SYNTHFLEX\source\repos\DevManager\DevManager\obj\Debug\DevManager.csproj.GenerateResource.Cache
+C:\Users\y0019.SYNTHFLEX\source\repos\DevManager\DevManager\obj\Debug\DevManager.csproj.CoreCompileInputs.cache
+C:\Users\y0019.SYNTHFLEX\source\repos\DevManager\DevManager\obj\Debug\DevManager.exe
+C:\Users\y0019.SYNTHFLEX\source\repos\DevManager\DevManager\obj\Debug\DevManager.pdb
+C:\Users\y0019.SYNTHFLEX\source\repos\DevManager\DevManager\bin\Debug\DevManager.pdb
+C:\Users\y0019.SYNTHFLEX\source\repos\DevManager\DevManager\obj\Debug\DevManager.csprojResolveAssemblyReference.cache
+C:\Users\y0019.SYNTHFLEX\Desktop\DevManager\DevManager\bin\Debug\DevManager.exe.config
+C:\Users\y0019.SYNTHFLEX\Desktop\DevManager\DevManager\obj\Debug\DevManager.exe
+C:\Users\y0019.SYNTHFLEX\Desktop\DevManager\DevManager\obj\Debug\DevManager.pdb
+C:\Users\y0019.SYNTHFLEX\Desktop\DevManager\DevManager\obj\Debug\DevManager.csprojResolveAssemblyReference.cache
+C:\Users\y0019.SYNTHFLEX\Desktop\DevManager\DevManager\obj\Debug\DevManager.Form1.resources
+C:\Users\y0019.SYNTHFLEX\Desktop\DevManager\DevManager\obj\Debug\DevManager.Properties.Resources.resources
+C:\Users\y0019.SYNTHFLEX\Desktop\DevManager\DevManager\obj\Debug\DevManager.csproj.GenerateResource.Cache
