@@ -1,0 +1,5 @@
+﻿  CirQueueTest.cpp
+c:\users\y0019.synthflex\source\repos\cirqueuetest\cirqueuetest\cirqueuetest.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\y0019.synthflex\source\repos\cirqueuetest\cirqueuetest\cirqueuetest.cpp(42): warning C4715: “init_queue”: 不是所有的控件路径都返回值
+  CirQueueTest.vcxproj -> c:\users\y0019.synthflex\source\repos\CirQueueTest\Debug\CirQueueTest.exe
+  CirQueueTest.vcxproj -> c:\users\y0019.synthflex\source\repos\CirQueueTest\Debug\CirQueueTest.pdb (Partial PDB)
