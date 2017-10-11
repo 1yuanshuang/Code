@@ -16,3 +16,13 @@ C:\Users\y0019.SYNTHFLEX\Documents\Visual Studio 2017\Projects\页面切换\Test
 C:\Users\y0019.SYNTHFLEX\Documents\Visual Studio 2017\Projects\页面切换\TestWindow\TestWindow\obj\Debug\TestWindow.csproj.GenerateResource.Cache
 C:\Users\y0019.SYNTHFLEX\Documents\Visual Studio 2017\Projects\页面切换\TestWindow\TestWindow\obj\Debug\TestWindow.exe
 C:\Users\y0019.SYNTHFLEX\Documents\Visual Studio 2017\Projects\页面切换\TestWindow\TestWindow\obj\Debug\TestWindow.pdb
+E:\gitLearn\页面切换\TestWindow\TestWindow\bin\Debug\TestWindow.exe.config
+E:\gitLearn\页面切换\TestWindow\TestWindow\bin\Debug\TestWindow.exe
+E:\gitLearn\页面切换\TestWindow\TestWindow\bin\Debug\TestWindow.pdb
+E:\gitLearn\页面切换\TestWindow\TestWindow\obj\Debug\TestWindow.csprojResolveAssemblyReference.cache
+E:\gitLearn\页面切换\TestWindow\TestWindow\obj\Debug\TestWindow.Form1.resources
+E:\gitLearn\页面切换\TestWindow\TestWindow\obj\Debug\TestWindow.Properties.Resources.resources
+E:\gitLearn\页面切换\TestWindow\TestWindow\obj\Debug\TestWindow.csproj.GenerateResource.Cache
+E:\gitLearn\页面切换\TestWindow\TestWindow\obj\Debug\TestWindow.csproj.CoreCompileInputs.cache
+E:\gitLearn\页面切换\TestWindow\TestWindow\obj\Debug\TestWindow.exe
+E:\gitLearn\页面切换\TestWindow\TestWindow\obj\Debug\TestWindow.pdb

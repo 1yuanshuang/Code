@@ -16,3 +16,13 @@ C:\Users\y0019.SYNTHFLEX\Documents\Visual Studio 2017\Projects\页面切换\Wind
 C:\Users\y0019.SYNTHFLEX\Documents\Visual Studio 2017\Projects\页面切换\WindowTest\WindowTest\obj\Debug\WindowTest.csproj.GenerateResource.Cache
 C:\Users\y0019.SYNTHFLEX\Documents\Visual Studio 2017\Projects\页面切换\WindowTest\WindowTest\obj\Debug\WindowTest.exe
 C:\Users\y0019.SYNTHFLEX\Documents\Visual Studio 2017\Projects\页面切换\WindowTest\WindowTest\obj\Debug\WindowTest.pdb
+E:\gitLearn\页面切换\WindowTest\WindowTest\bin\Debug\WindowTest.exe.config
+E:\gitLearn\页面切换\WindowTest\WindowTest\bin\Debug\WindowTest.exe
+E:\gitLearn\页面切换\WindowTest\WindowTest\bin\Debug\WindowTest.pdb
+E:\gitLearn\页面切换\WindowTest\WindowTest\obj\Debug\WindowTest.csprojResolveAssemblyReference.cache
+E:\gitLearn\页面切换\WindowTest\WindowTest\obj\Debug\WindowTest.Form1.resources
+E:\gitLearn\页面切换\WindowTest\WindowTest\obj\Debug\WindowTest.Properties.Resources.resources
+E:\gitLearn\页面切换\WindowTest\WindowTest\obj\Debug\WindowTest.csproj.GenerateResource.Cache
+E:\gitLearn\页面切换\WindowTest\WindowTest\obj\Debug\WindowTest.csproj.CoreCompileInputs.cache
+E:\gitLearn\页面切换\WindowTest\WindowTest\obj\Debug\WindowTest.exe
+E:\gitLearn\页面切换\WindowTest\WindowTest\obj\Debug\WindowTest.pdb

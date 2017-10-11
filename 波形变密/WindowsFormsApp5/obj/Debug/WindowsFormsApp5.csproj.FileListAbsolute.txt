@@ -18,3 +18,14 @@ C:\Users\y0019.SYNTHFLEX\Documents\Visual Studio 2017\Projects\波形变密\Wind
 C:\Users\y0019.SYNTHFLEX\Documents\Visual Studio 2017\Projects\波形变密\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.csproj.GenerateResource.Cache
 C:\Users\y0019.SYNTHFLEX\Documents\Visual Studio 2017\Projects\波形变密\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.exe
 C:\Users\y0019.SYNTHFLEX\Documents\Visual Studio 2017\Projects\波形变密\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.pdb
+E:\gitLearn\波形变密\WindowsFormsApp5\bin\Debug\WindowsFormsApp5.exe.config
+E:\gitLearn\波形变密\WindowsFormsApp5\bin\Debug\WindowsFormsApp5.exe
+E:\gitLearn\波形变密\WindowsFormsApp5\bin\Debug\WindowsFormsApp5.pdb
+E:\gitLearn\波形变密\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.csprojResolveAssemblyReference.cache
+E:\gitLearn\波形变密\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.Form1.resources
+E:\gitLearn\波形变密\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.Properties.Resources.resources
+E:\gitLearn\波形变密\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.waveChart.resources
+E:\gitLearn\波形变密\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.csproj.GenerateResource.Cache
+E:\gitLearn\波形变密\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.csproj.CoreCompileInputs.cache
+E:\gitLearn\波形变密\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.exe
+E:\gitLearn\波形变密\WindowsFormsApp5\obj\Debug\WindowsFormsApp5.pdb

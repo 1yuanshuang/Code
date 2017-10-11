@@ -1,0 +1,15 @@
+c:\users\y0019.synthflex\source\repos\计算器\计算器\obj\Debug\计算器.csprojResolveAssemblyReference.cache
+c:\users\y0019.synthflex\source\repos\计算器\计算器\obj\Debug\App.g.cs
+c:\users\y0019.synthflex\source\repos\计算器\计算器\obj\Debug\计算器_MarkupCompile.cache
+c:\users\y0019.synthflex\source\repos\计算器\计算器\bin\Debug\计算器.exe.config
+c:\users\y0019.synthflex\source\repos\计算器\计算器\bin\Debug\计算器.exe
+c:\users\y0019.synthflex\source\repos\计算器\计算器\bin\Debug\计算器.pdb
+c:\users\y0019.synthflex\source\repos\计算器\计算器\obj\Debug\MainWindow.g.cs
+c:\users\y0019.synthflex\source\repos\计算器\计算器\obj\Debug\计算器_MarkupCompile.lref
+c:\users\y0019.synthflex\source\repos\计算器\计算器\obj\Debug\MainWindow.baml
+c:\users\y0019.synthflex\source\repos\计算器\计算器\obj\Debug\计算器.g.resources
+c:\users\y0019.synthflex\source\repos\计算器\计算器\obj\Debug\计算器.Properties.Resources.resources
+c:\users\y0019.synthflex\source\repos\计算器\计算器\obj\Debug\计算器.csproj.GenerateResource.Cache
+c:\users\y0019.synthflex\source\repos\计算器\计算器\obj\Debug\计算器.csproj.CoreCompileInputs.cache
+c:\users\y0019.synthflex\source\repos\计算器\计算器\obj\Debug\计算器.exe
+c:\users\y0019.synthflex\source\repos\计算器\计算器\obj\Debug\计算器.pdb

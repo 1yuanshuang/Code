@@ -11,3 +11,17 @@ c:\users\y0019.synthflex\documents\visual studio 2017\Projects\TestWinform\TestW
 c:\users\y0019.synthflex\documents\visual studio 2017\Projects\TestWinform\TestWinform\obj\Debug\TestWinform.Windows3.resources
 c:\users\y0019.synthflex\documents\visual studio 2017\Projects\TestWinform\TestWinform\obj\Debug\TestWinform.csprojResolveAssemblyReference.cache
 c:\users\y0019.synthflex\documents\visual studio 2017\Projects\TestWinform\TestWinform\obj\Debug\TestWinform.Windows4.resources
+E:\gitLearn\页面切换\TestWinform\TestWinform\bin\Debug\TestWinform.exe.config
+E:\gitLearn\页面切换\TestWinform\TestWinform\bin\Debug\TestWinform.exe
+E:\gitLearn\页面切换\TestWinform\TestWinform\bin\Debug\TestWinform.pdb
+E:\gitLearn\页面切换\TestWinform\TestWinform\obj\Debug\TestWinform.csprojResolveAssemblyReference.cache
+E:\gitLearn\页面切换\TestWinform\TestWinform\obj\Debug\TestWinform.Form1.resources
+E:\gitLearn\页面切换\TestWinform\TestWinform\obj\Debug\TestWinform.Properties.Resources.resources
+E:\gitLearn\页面切换\TestWinform\TestWinform\obj\Debug\TestWinform.windows1.resources
+E:\gitLearn\页面切换\TestWinform\TestWinform\obj\Debug\TestWinform.Windows2.resources
+E:\gitLearn\页面切换\TestWinform\TestWinform\obj\Debug\TestWinform.Windows3.resources
+E:\gitLearn\页面切换\TestWinform\TestWinform\obj\Debug\TestWinform.Windows4.resources
+E:\gitLearn\页面切换\TestWinform\TestWinform\obj\Debug\TestWinform.csproj.GenerateResource.Cache
+E:\gitLearn\页面切换\TestWinform\TestWinform\obj\Debug\TestWinform.csproj.CoreCompileInputs.cache
+E:\gitLearn\页面切换\TestWinform\TestWinform\obj\Debug\TestWinform.exe
+E:\gitLearn\页面切换\TestWinform\TestWinform\obj\Debug\TestWinform.pdb

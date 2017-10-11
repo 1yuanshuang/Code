@@ -36,7 +36,7 @@ namespace TestWinform
 
             for (int j = 0; j < array.Count; j++)
             {
-                System.Windows.Forms.Control s = (array[j]) as System.Windows.Forms.Control;
+                Control s = (array[j]) as System.Windows.Forms.Control;
                 gpbWindows.Controls.Add(s);
             }
         }

@@ -1,0 +1,10 @@
+c:\users\y0019.synthflex\source\repos\TestButton1\TestButton1\bin\Debug\TestButton1.exe.config
+c:\users\y0019.synthflex\source\repos\TestButton1\TestButton1\bin\Debug\TestButton1.exe
+c:\users\y0019.synthflex\source\repos\TestButton1\TestButton1\bin\Debug\TestButton1.pdb
+c:\users\y0019.synthflex\source\repos\TestButton1\TestButton1\obj\Debug\TestButton1.csprojResolveAssemblyReference.cache
+c:\users\y0019.synthflex\source\repos\TestButton1\TestButton1\obj\Debug\TestButton1.Form1.resources
+c:\users\y0019.synthflex\source\repos\TestButton1\TestButton1\obj\Debug\TestButton1.Properties.Resources.resources
+c:\users\y0019.synthflex\source\repos\TestButton1\TestButton1\obj\Debug\TestButton1.csproj.GenerateResource.Cache
+c:\users\y0019.synthflex\source\repos\TestButton1\TestButton1\obj\Debug\TestButton1.csproj.CoreCompileInputs.cache
+c:\users\y0019.synthflex\source\repos\TestButton1\TestButton1\obj\Debug\TestButton1.exe
+c:\users\y0019.synthflex\source\repos\TestButton1\TestButton1\obj\Debug\TestButton1.pdb
