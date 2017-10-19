@@ -1,0 +1,18 @@
+﻿<UserControl x:Class="PluginDLL3.WebControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:PluginDLL3"
+             mc:Ignorable="d" 
+             d:DesignHeight="420" d:DesignWidth="597">
+    <Grid>
+        <TextBox HorizontalAlignment="Left" Height="25" Margin="5,0,0,0" VerticalAlignment="Top" Width="590" Background="AliceBlue" Text="保存  刷新"/>
+        <ScrollViewer HorizontalAlignment="Left" Height="380" Margin="5,30,0,0" VerticalAlignment="Top" Width="577">
+            <WebBrowser Height="370" Width="556" Name="Web"/>
+        </ScrollViewer>
+
+
+
+    </Grid>
+</UserControl>

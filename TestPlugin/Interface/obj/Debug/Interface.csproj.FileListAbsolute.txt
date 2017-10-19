@@ -1,0 +1,5 @@
+C:\Users\y0019.SYNTHFLEX\source\repos\TestPlugin\Interface\bin\Debug\Interface.dll
+C:\Users\y0019.SYNTHFLEX\source\repos\TestPlugin\Interface\bin\Debug\Interface.pdb
+C:\Users\y0019.SYNTHFLEX\source\repos\TestPlugin\Interface\obj\Debug\Interface.csproj.CoreCompileInputs.cache
+C:\Users\y0019.SYNTHFLEX\source\repos\TestPlugin\Interface\obj\Debug\Interface.dll
+C:\Users\y0019.SYNTHFLEX\source\repos\TestPlugin\Interface\obj\Debug\Interface.pdb

@@ -1,0 +1,15 @@
+F:\WorkSpace\DemoTemplate\Smlant\DataLibrary\bin\Debug\DataLibrary.dll
+F:\WorkSpace\DemoTemplate\Smlant\DataLibrary\bin\Debug\DataLibrary.pdb
+F:\WorkSpace\DemoTemplate\Smlant\DataLibrary\obj\Debug\ResolveAssemblyReference.cache
+F:\WorkSpace\DemoTemplate\Smlant\DataLibrary\obj\Debug\DataLibrary.Properties.Resources.resources
+F:\WorkSpace\DemoTemplate\Smlant\DataLibrary\obj\Debug\GenerateResource.read.1.tlog
+F:\WorkSpace\DemoTemplate\Smlant\DataLibrary\obj\Debug\GenerateResource.write.1.tlog
+F:\WorkSpace\DemoTemplate\Smlant\DataLibrary\obj\Debug\DataLibrary.dll
+F:\WorkSpace\DemoTemplate\Smlant\DataLibrary\obj\Debug\DataLibrary.pdb
+C:\Users\y0019.SYNTHFLEX\Desktop\Smlant\DataLibrary\bin\Debug\DataLibrary.dll
+C:\Users\y0019.SYNTHFLEX\Desktop\Smlant\DataLibrary\bin\Debug\DataLibrary.pdb
+C:\Users\y0019.SYNTHFLEX\Desktop\Smlant\DataLibrary\obj\Debug\DataLibrary.csprojResolveAssemblyReference.cache
+C:\Users\y0019.SYNTHFLEX\Desktop\Smlant\DataLibrary\obj\Debug\DataLibrary.Properties.Resources.resources
+C:\Users\y0019.SYNTHFLEX\Desktop\Smlant\DataLibrary\obj\Debug\DataLibrary.csproj.GenerateResource.Cache
+C:\Users\y0019.SYNTHFLEX\Desktop\Smlant\DataLibrary\obj\Debug\DataLibrary.dll
+C:\Users\y0019.SYNTHFLEX\Desktop\Smlant\DataLibrary\obj\Debug\DataLibrary.pdb

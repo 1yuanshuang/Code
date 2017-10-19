@@ -1,0 +1,8 @@
+C:\Users\y0019.SYNTHFLEX\source\repos\TestPlugin\ChangeWindow\bin\Debug\ChangeWindow.dll
+C:\Users\y0019.SYNTHFLEX\source\repos\TestPlugin\ChangeWindow\bin\Debug\ChangeWindow.pdb
+C:\Users\y0019.SYNTHFLEX\source\repos\TestPlugin\ChangeWindow\bin\Debug\Interface.dll
+C:\Users\y0019.SYNTHFLEX\source\repos\TestPlugin\ChangeWindow\bin\Debug\Interface.pdb
+C:\Users\y0019.SYNTHFLEX\source\repos\TestPlugin\ChangeWindow\obj\Debug\ChangeWindow.csprojResolveAssemblyReference.cache
+C:\Users\y0019.SYNTHFLEX\source\repos\TestPlugin\ChangeWindow\obj\Debug\ChangeWindow.csproj.CoreCompileInputs.cache
+C:\Users\y0019.SYNTHFLEX\source\repos\TestPlugin\ChangeWindow\obj\Debug\ChangeWindow.dll
+C:\Users\y0019.SYNTHFLEX\source\repos\TestPlugin\ChangeWindow\obj\Debug\ChangeWindow.pdb

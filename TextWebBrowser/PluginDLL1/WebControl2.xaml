@@ -1,0 +1,26 @@
+﻿<UserControl x:Class="PluginDLL1.WebControl2"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:PluginDLL1"
+             mc:Ignorable="d" 
+                 d:DesignHeight="786" d:DesignWidth="1120">
+    <Grid>
+        <TextBox Width="1118" Height="30" Margin="2,0,0,756" Text="新建                                                                                       
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 显示帮助"  Name="TextBox1" Background="AliceBlue"></TextBox>
+        <!--<ScrollViewer Width="1100" Height="700">-->
+        <WebBrowser Width="1000" Height="682" Name="Web"/>
+        <!--</ScrollViewer>-->
+
+        <TextBox Width="1118" Height="30" Margin="2,756,0,0" Name="TextBox2" Background="AliceBlue"></TextBox>
+        <!--<WebBrowser Width="818" Height="750" Margin="2,32,0,0" Name="Web"></WebBrowser>-->
+    </Grid>
+</UserControl>

@@ -1,0 +1,82 @@
+﻿<Window x:Class="MainWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="550" Width="825" xmlns:my="clr-namespace:PluginDLL;assembly=PluginDLL">
+
+    <!--<Window.Resources>
+        -->
+    <!--数据源-->
+    <!--
+        <XmlDataProvider x:Key="ds" Source="XMLFile1.xml" XPath="Data/Grade"></XmlDataProvider>
+        -->
+    <!--年级模板-->
+    <!--
+        <HierarchicalDataTemplate DataType="Grade" ItemsSource="{Binding XPath=Class}">
+            <TextBlock Text="{Binding XPath=@Text}"></TextBlock>
+        </HierarchicalDataTemplate>
+        -->
+    <!--班级模板-->
+    <!--
+        <HierarchicalDataTemplate DataType="Class" ItemsSource="{Binding XPath=Group}">
+            <RadioButton Content="{Binding XPath=@Name}" GroupName="gn"></RadioButton>
+        </HierarchicalDataTemplate>
+        -->
+    <!--小组模板-->
+    <!--
+        <HierarchicalDataTemplate DataType="Group" ItemsSource="{Binding XPath=Student}">
+            <CheckBox Content="{Binding XPath=@Name}"></CheckBox>
+        </HierarchicalDataTemplate>
+    </Window.Resources>-->
+
+    <Grid>
+        <StackPanel Orientation="Horizontal" Margin="0,0,0,485">
+            <Border BorderThickness="1">
+                <Menu  Background="AliceBlue"  Width="820" Margin="0,0,0,-1">
+                    <MenuItem Header="文件(_F)" Margin="0,3,0,0"></MenuItem>
+                    <MenuItem Header="编辑(_E)" Margin="0,3,0,0" ></MenuItem>
+                    <MenuItem Header="查看(_V)" Margin="0,3,0,0"></MenuItem>
+                    <MenuItem Header="工具(_T)" Margin="0,3,0,0"></MenuItem>
+                    <MenuItem Header="帮助(_H)" Margin="0,3,0,0"></MenuItem>
+                </Menu>
+            </Border>
+        </StackPanel>
+
+        <!--<Button Content="Load" Height="25" HorizontalAlignment="Left" Margin="3,30,0,0" Name="button1" VerticalAlignment="Top" Width="101" Click="button1_Click" />-->
+        <!--<TreeView ItemsSource="{Binding Source={StaticResource ds}}" Height="459" HorizontalAlignment="Left" Margin="2,30,0,0" Name="TreeView1" TreeViewItem.Selected="TreeView1_Selected1" VerticalAlignment="Top" Width="175">-->
+        <TreeView Height="459" HorizontalAlignment="Left" Margin="2,30,0,0" Name="TreeView1" VerticalAlignment="Top" Width="175" TreeViewItem.Selected="TreeView1_Selected">
+            <TreeViewItem Header="我的系统" Name="MySystem">
+                <!--<TreeViewItem Header="数据邻居"/>
+                <TreeViewItem Header="设备和接口">
+                    <TreeViewItem Header="ASRL1::INSTR COM1"/>
+                    <TreeViewItem Header="ASRL1::INSTR COM2"/>
+                    <TreeViewItem Header="ASRL1::INSTR LPT1"/>
+                </TreeViewItem>-->
+            </TreeViewItem>
+
+            <TreeViewItem Header="数据邻居">
+                <TreeViewItem Header="NI-DAQmx换算"/>
+            </TreeViewItem>
+
+            <TreeViewItem Header="设备和接口">
+                <TreeViewItem Header="数据邻居"/>
+                <TreeViewItem Header="设备和接口"/>
+            </TreeViewItem>
+
+            <TreeViewItem Header="远程系统" >
+                <TreeViewItem Header="数据邻居"/>
+                <TreeViewItem Header="设备和接口"/>
+            </TreeViewItem>
+        </TreeView>
+
+        <StackPanel Orientation="Horizontal" Background="AliceBlue" Margin="0,494,0,0" Height="25">
+            <StatusBar>
+            </StatusBar>
+        </StackPanel>
+
+        <Border HorizontalAlignment="Left" Height="29" Margin="190,30,0,0" VerticalAlignment="Top" Width="596"/>
+        <StackPanel HorizontalAlignment="Left" Height="430" Margin="190,40,0,0" VerticalAlignment="Top" Width="620" Name="stackPanel1">
+         
+        </StackPanel>
+
+    </Grid>
+</Window>
