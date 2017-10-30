@@ -1,0 +1,5 @@
+c:\users\y0019.synthflex\source\repos\TextWebBrowser\Interface\bin\Debug\Interface.dll
+c:\users\y0019.synthflex\source\repos\TextWebBrowser\Interface\bin\Debug\Interface.pdb
+c:\users\y0019.synthflex\source\repos\TextWebBrowser\Interface\obj\Debug\Interface.csproj.CoreCompileInputs.cache
+c:\users\y0019.synthflex\source\repos\TextWebBrowser\Interface\obj\Debug\Interface.dll
+c:\users\y0019.synthflex\source\repos\TextWebBrowser\Interface\obj\Debug\Interface.pdb

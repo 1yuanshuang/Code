@@ -1,0 +1,13 @@
+c:\users\y0019.synthflex\source\repos\TextWebBrowser\PluginDLL2\bin\Debug\PluginDLL2.dll
+c:\users\y0019.synthflex\source\repos\TextWebBrowser\PluginDLL2\bin\Debug\PluginDLL2.pdb
+c:\users\y0019.synthflex\source\repos\TextWebBrowser\PluginDLL2\bin\Debug\Interface.dll
+c:\users\y0019.synthflex\source\repos\TextWebBrowser\PluginDLL2\bin\Debug\Interface.pdb
+c:\users\y0019.synthflex\source\repos\TextWebBrowser\PluginDLL2\obj\Debug\PluginDLL2.csprojResolveAssemblyReference.cache
+c:\users\y0019.synthflex\source\repos\TextWebBrowser\PluginDLL2\obj\Debug\WebControl3.g.cs
+c:\users\y0019.synthflex\source\repos\TextWebBrowser\PluginDLL2\obj\Debug\PluginDLL2_MarkupCompile.cache
+c:\users\y0019.synthflex\source\repos\TextWebBrowser\PluginDLL2\obj\Debug\PluginDLL2_MarkupCompile.lref
+c:\users\y0019.synthflex\source\repos\TextWebBrowser\PluginDLL2\obj\Debug\WebControl3.baml
+c:\users\y0019.synthflex\source\repos\TextWebBrowser\PluginDLL2\obj\Debug\PluginDLL2.g.resources
+c:\users\y0019.synthflex\source\repos\TextWebBrowser\PluginDLL2\obj\Debug\PluginDLL2.csproj.CoreCompileInputs.cache
+c:\users\y0019.synthflex\source\repos\TextWebBrowser\PluginDLL2\obj\Debug\PluginDLL2.dll
+c:\users\y0019.synthflex\source\repos\TextWebBrowser\PluginDLL2\obj\Debug\PluginDLL2.pdb

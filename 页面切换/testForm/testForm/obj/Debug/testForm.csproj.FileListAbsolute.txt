@@ -1,0 +1,9 @@
+c:\users\y0019.synthflex\documents\visual studio 2017\Projects\testForm\testForm\bin\Debug\testForm.exe.config
+c:\users\y0019.synthflex\documents\visual studio 2017\Projects\testForm\testForm\bin\Debug\testForm.exe
+c:\users\y0019.synthflex\documents\visual studio 2017\Projects\testForm\testForm\bin\Debug\testForm.pdb
+c:\users\y0019.synthflex\documents\visual studio 2017\Projects\testForm\testForm\obj\Debug\testForm.csprojResolveAssemblyReference.cache
+c:\users\y0019.synthflex\documents\visual studio 2017\Projects\testForm\testForm\obj\Debug\testForm.Form1.resources
+c:\users\y0019.synthflex\documents\visual studio 2017\Projects\testForm\testForm\obj\Debug\testForm.Properties.Resources.resources
+c:\users\y0019.synthflex\documents\visual studio 2017\Projects\testForm\testForm\obj\Debug\testForm.csproj.GenerateResource.Cache
+c:\users\y0019.synthflex\documents\visual studio 2017\Projects\testForm\testForm\obj\Debug\testForm.exe
+c:\users\y0019.synthflex\documents\visual studio 2017\Projects\testForm\testForm\obj\Debug\testForm.pdb

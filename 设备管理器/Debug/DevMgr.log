@@ -1,0 +1,60 @@
+﻿cl : 命令行 warning D9007: “/Gm”需要“/Zi 或 /ZI”；选项被忽略
+  Setup.c
+Setup.c(164): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\ucrt\stdio.h(1772): note: 参见“sprintf”的声明
+Setup.c(347): warning C4477: “sprintf”: 格式字符串“%08X”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“DWORDLONG”
+  Setup.c(347): note: 请考虑在格式字符串中使用“%llX”
+  Setup.c(347): note: 请考虑在格式字符串中使用“%I64X”
+Setup.c(347): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\ucrt\stdio.h(1772): note: 参见“sprintf”的声明
+Setup.c(348): warning C4477: “sprintf”: 格式字符串“%08X”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“DWORDLONG”
+  Setup.c(348): note: 请考虑在格式字符串中使用“%llX”
+  Setup.c(348): note: 请考虑在格式字符串中使用“%I64X”
+Setup.c(348): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\ucrt\stdio.h(1772): note: 参见“sprintf”的声明
+Setup.c(364): warning C4477: “sprintf”: 格式字符串“%08X”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“DWORDLONG”
+  Setup.c(364): note: 请考虑在格式字符串中使用“%llX”
+  Setup.c(364): note: 请考虑在格式字符串中使用“%I64X”
+Setup.c(364): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\ucrt\stdio.h(1772): note: 参见“sprintf”的声明
+Setup.c(365): warning C4477: “sprintf”: 格式字符串“%08X”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“DWORDLONG”
+  Setup.c(365): note: 请考虑在格式字符串中使用“%llX”
+  Setup.c(365): note: 请考虑在格式字符串中使用“%I64X”
+Setup.c(365): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\ucrt\stdio.h(1772): note: 参见“sprintf”的声明
+Setup.c(383): warning C4477: “sprintf”: 格式字符串“%04X”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“DWORDLONG”
+  Setup.c(383): note: 请考虑在格式字符串中使用“%llX”
+  Setup.c(383): note: 请考虑在格式字符串中使用“%I64X”
+Setup.c(383): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\ucrt\stdio.h(1772): note: 参见“sprintf”的声明
+Setup.c(384): warning C4477: “sprintf”: 格式字符串“%04X”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“DWORDLONG”
+  Setup.c(384): note: 请考虑在格式字符串中使用“%llX”
+  Setup.c(384): note: 请考虑在格式字符串中使用“%I64X”
+Setup.c(384): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\ucrt\stdio.h(1772): note: 参见“sprintf”的声明
+Setup.c(401): warning C4477: “sprintf”: 格式字符串“%04X”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“DWORDLONG”
+  Setup.c(401): note: 请考虑在格式字符串中使用“%llX”
+  Setup.c(401): note: 请考虑在格式字符串中使用“%I64X”
+Setup.c(401): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\ucrt\stdio.h(1772): note: 参见“sprintf”的声明
+Setup.c(402): warning C4477: “sprintf”: 格式字符串“%04X”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“DWORDLONG”
+  Setup.c(402): note: 请考虑在格式字符串中使用“%llX”
+  Setup.c(402): note: 请考虑在格式字符串中使用“%I64X”
+Setup.c(402): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\ucrt\stdio.h(1772): note: 参见“sprintf”的声明
+Setup.c(420): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\ucrt\stdio.h(1772): note: 参见“sprintf”的声明
+Setup.c(433): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\ucrt\stdio.h(1772): note: 参见“sprintf”的声明
+Setup.c(434): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\ucrt\stdio.h(1772): note: 参见“sprintf”的声明
+Setup.c(449): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\ucrt\stdio.h(1772): note: 参见“sprintf”的声明
+Setup.c(462): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\ucrt\stdio.h(1772): note: 参见“sprintf”的声明
+Setup.c(463): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\ucrt\stdio.h(1772): note: 参见“sprintf”的声明
+Setup.c(652): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\ucrt\stdio.h(1772): note: 参见“sprintf”的声明
+  DevMgr.vcxproj -> C:\Users\y0019.SYNTHFLEX\Desktop\DevMgr-SRC\.\Debug\DevMgr.exe
+  DevMgr.vcxproj -> .\Debug\DevMgr.pdb (Full PDB)

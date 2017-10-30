@@ -1,0 +1,21 @@
+﻿  BNMulDIV.cpp
+c:\users\y0019.synthflex\documents\visual studio 2017\projects\大数乘除\大数乘除\bnmuldiv.cpp(43): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\y0019.synthflex\documents\visual studio 2017\projects\大数乘除\大数乘除\bnmuldiv.cpp(45): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\y0019.synthflex\documents\visual studio 2017\projects\大数乘除\大数乘除\bnmuldiv.cpp(51): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\y0019.synthflex\documents\visual studio 2017\projects\大数乘除\大数乘除\bnmuldiv.cpp(53): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\y0019.synthflex\documents\visual studio 2017\projects\大数乘除\大数乘除\bnmuldiv.cpp(61): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\y0019.synthflex\documents\visual studio 2017\projects\大数乘除\大数乘除\bnmuldiv.cpp(116): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\y0019.synthflex\documents\visual studio 2017\projects\大数乘除\大数乘除\bnmuldiv.cpp(118): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\y0019.synthflex\documents\visual studio 2017\projects\大数乘除\大数乘除\bnmuldiv.cpp(165): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\y0019.synthflex\documents\visual studio 2017\projects\大数乘除\大数乘除\bnmuldiv.cpp(299): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\y0019.synthflex\documents\visual studio 2017\projects\大数乘除\大数乘除\bnmuldiv.cpp(348): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\y0019.synthflex\documents\visual studio 2017\projects\大数乘除\大数乘除\bnmuldiv.cpp(383): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\y0019.synthflex\documents\visual studio 2017\projects\大数乘除\大数乘除\bnmuldiv.cpp(403): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\y0019.synthflex\documents\visual studio 2017\projects\大数乘除\大数乘除\bnmuldiv.cpp(440): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\y0019.synthflex\documents\visual studio 2017\projects\大数乘除\大数乘除\bnmuldiv.cpp(470): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\y0019.synthflex\documents\visual studio 2017\projects\大数乘除\大数乘除\bnmuldiv.cpp(509): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\y0019.synthflex\documents\visual studio 2017\projects\大数乘除\大数乘除\bnmuldiv.cpp(544): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\y0019.synthflex\documents\visual studio 2017\projects\大数乘除\大数乘除\bnmuldiv.cpp(577): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\y0019.synthflex\documents\visual studio 2017\projects\大数乘除\大数乘除\bnmuldiv.cpp(607): warning C4018: “<”: 有符号/无符号不匹配
+  大数乘除.vcxproj -> C:\Users\y0019.SYNTHFLEX\Documents\Visual Studio 2017\Projects\大数乘除\Debug\大数乘除.exe
+  大数乘除.vcxproj -> C:\Users\y0019.SYNTHFLEX\Documents\Visual Studio 2017\Projects\大数乘除\Debug\大数乘除.pdb (Partial PDB)

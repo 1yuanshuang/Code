@@ -1,0 +1,8 @@
+C:\Users\y0019.SYNTHFLEX\source\repos\TestPlugin\ChangeTitle1\bin\Debug\ChangeTitle1.dll
+C:\Users\y0019.SYNTHFLEX\source\repos\TestPlugin\ChangeTitle1\bin\Debug\ChangeTitle1.pdb
+C:\Users\y0019.SYNTHFLEX\source\repos\TestPlugin\ChangeTitle1\bin\Debug\Interface.dll
+C:\Users\y0019.SYNTHFLEX\source\repos\TestPlugin\ChangeTitle1\bin\Debug\Interface.pdb
+C:\Users\y0019.SYNTHFLEX\source\repos\TestPlugin\ChangeTitle1\obj\Debug\ChangeTitle1.csprojResolveAssemblyReference.cache
+C:\Users\y0019.SYNTHFLEX\source\repos\TestPlugin\ChangeTitle1\obj\Debug\ChangeTitle1.csproj.CoreCompileInputs.cache
+C:\Users\y0019.SYNTHFLEX\source\repos\TestPlugin\ChangeTitle1\obj\Debug\ChangeTitle1.dll
+C:\Users\y0019.SYNTHFLEX\source\repos\TestPlugin\ChangeTitle1\obj\Debug\ChangeTitle1.pdb

@@ -1,0 +1,17 @@
+C:\Users\y0019.SYNTHFLEX\source\repos\TestPlugin\TestPlugin\bin\Debug\TestPlugin.exe
+C:\Users\y0019.SYNTHFLEX\source\repos\TestPlugin\TestPlugin\bin\Debug\TestPlugin.pdb
+C:\Users\y0019.SYNTHFLEX\source\repos\TestPlugin\TestPlugin\bin\Debug\Interface.dll
+C:\Users\y0019.SYNTHFLEX\source\repos\TestPlugin\TestPlugin\bin\Debug\Interface.pdb
+C:\Users\y0019.SYNTHFLEX\source\repos\TestPlugin\TestPlugin\obj\Debug\TestPlugin.csprojResolveAssemblyReference.cache
+C:\Users\y0019.SYNTHFLEX\source\repos\TestPlugin\TestPlugin\obj\Debug\MainWindow.g.cs
+C:\Users\y0019.SYNTHFLEX\source\repos\TestPlugin\TestPlugin\obj\Debug\App.g.cs
+C:\Users\y0019.SYNTHFLEX\source\repos\TestPlugin\TestPlugin\obj\Debug\TestPlugin_MarkupCompile.cache
+C:\Users\y0019.SYNTHFLEX\source\repos\TestPlugin\TestPlugin\obj\Debug\TestPlugin_MarkupCompile.lref
+C:\Users\y0019.SYNTHFLEX\source\repos\TestPlugin\TestPlugin\obj\Debug\MainWindow.baml
+C:\Users\y0019.SYNTHFLEX\source\repos\TestPlugin\TestPlugin\obj\Debug\TestPlugin.g.resources
+C:\Users\y0019.SYNTHFLEX\source\repos\TestPlugin\TestPlugin\obj\Debug\TestPlugin.Properties.Resources.resources
+C:\Users\y0019.SYNTHFLEX\source\repos\TestPlugin\TestPlugin\obj\Debug\TestPlugin.csproj.GenerateResource.Cache
+C:\Users\y0019.SYNTHFLEX\source\repos\TestPlugin\TestPlugin\obj\Debug\TestPlugin.csproj.CoreCompileInputs.cache
+C:\Users\y0019.SYNTHFLEX\source\repos\TestPlugin\TestPlugin\obj\Debug\TestPlugin.exe
+C:\Users\y0019.SYNTHFLEX\source\repos\TestPlugin\TestPlugin\obj\Debug\TestPlugin.pdb
+C:\Users\y0019.SYNTHFLEX\source\repos\TestPlugin\TestPlugin\bin\Debug\TestPlugin.exe.config

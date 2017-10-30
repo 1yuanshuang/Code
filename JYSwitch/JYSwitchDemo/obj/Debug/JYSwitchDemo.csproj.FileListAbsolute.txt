@@ -1,0 +1,15 @@
+C:\Users\y0019.SYNTHFLEX\documents\visual studio 2017\Projects\JYSwitch\JYSwitchDemo\bin\Debug\JYSwitchDemo.exe.config
+C:\Users\y0019.SYNTHFLEX\documents\visual studio 2017\Projects\JYSwitch\JYSwitchDemo\bin\Debug\JYSwitchDemo.exe
+C:\Users\y0019.SYNTHFLEX\documents\visual studio 2017\Projects\JYSwitch\JYSwitchDemo\bin\Debug\JYSwitchDemo.pdb
+C:\Users\y0019.SYNTHFLEX\documents\visual studio 2017\Projects\JYSwitch\JYSwitchDemo\bin\Debug\WindowsFormsControlLibrary1.dll
+C:\Users\y0019.SYNTHFLEX\documents\visual studio 2017\Projects\JYSwitch\JYSwitchDemo\bin\Debug\WindowsFormsControlLibrary2.dll
+C:\Users\y0019.SYNTHFLEX\documents\visual studio 2017\Projects\JYSwitch\JYSwitchDemo\bin\Debug\WindowsFormsControlLibrary1.pdb
+C:\Users\y0019.SYNTHFLEX\documents\visual studio 2017\Projects\JYSwitch\JYSwitchDemo\bin\Debug\WindowsFormsControlLibrary2.pdb
+C:\Users\y0019.SYNTHFLEX\documents\visual studio 2017\Projects\JYSwitch\JYSwitchDemo\obj\Debug\JYSwitchDemo.Form.resources
+C:\Users\y0019.SYNTHFLEX\documents\visual studio 2017\Projects\JYSwitch\JYSwitchDemo\obj\Debug\JYSwitchDemo.JYSwitch.resources
+C:\Users\y0019.SYNTHFLEX\documents\visual studio 2017\Projects\JYSwitch\JYSwitchDemo\obj\Debug\JYSwitchDemo.LED.resources
+C:\Users\y0019.SYNTHFLEX\documents\visual studio 2017\Projects\JYSwitch\JYSwitchDemo\obj\Debug\JYSwitchDemo.Properties.Resources.resources
+C:\Users\y0019.SYNTHFLEX\documents\visual studio 2017\Projects\JYSwitch\JYSwitchDemo\obj\Debug\JYSwitchDemo.csproj.GenerateResource.Cache
+C:\Users\y0019.SYNTHFLEX\documents\visual studio 2017\Projects\JYSwitch\JYSwitchDemo\obj\Debug\JYSwitchDemo.exe
+C:\Users\y0019.SYNTHFLEX\documents\visual studio 2017\Projects\JYSwitch\JYSwitchDemo\obj\Debug\JYSwitchDemo.pdb
+C:\Users\y0019.SYNTHFLEX\documents\visual studio 2017\Projects\JYSwitch\JYSwitchDemo\obj\Debug\JYSwitchDemo.csprojResolveAssemblyReference.cache

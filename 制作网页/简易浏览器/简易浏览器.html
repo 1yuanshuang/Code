@@ -1,0 +1,748 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html;charset="utf-8"/> 
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>百度一下你就知道</title>
+
+<style type="text/css">
+body{
+margin:0;
+padding:0;
+}
+
+#header{
+ height:5%;
+ background:#ccc;
+ position:relative;
+}
+
+#content_left{
+height:80%;
+width:20%;
+left:0;
+float:left;
+background:gray;
+position:relative;
+}
+
+#content_main{
+height:80%;
+width:60%;
+float:left;
+background:white;
+text-align:center;
+position:relative;
+}
+ 
+ 
+#content_right{
+height:80%;
+width:20%;
+float:left;
+right:0;
+background:gray;
+position:relative;
+}
+ 
+#footer{
+    height: 15%;
+	line-height: 30px;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	background: pink;
+	color: #fff;
+	font-family: Arial;
+	font-size: 18px;
+	letter-spacing: 1px;
+ }
+</style>
+
+<style type="text/css">
+  #head{
+  width:400px;
+  height:30px;
+  }
+
+  #head ul{padding:0; margin:0;}
+  #head ul li{ 
+  list-style:none;
+  float:left;
+  text-decoration:none; 
+  display:block; 
+  width:80px;padding:5px; 
+  margin:0px 10px 0px 0px; 
+  position:relative;
+  }
+  #head ul li a{ text-decoration:none; color:#000000;}
+  #head ul li a:visited{ text-decoration:none; color:#000000;}
+  
+ #L1{
+ background-color:#9CC;
+ border-top-color: #F6C;
+ border-right-color:#F6C;
+ border-left-color: #F6C;
+  }
+  #L2{
+   background-color:#CC9;
+   border-color:#309;
+   margin-left:1px;
+  }
+ 
+ #L3{
+   background-color:red;
+   border-color:#360;
+  }
+ #L4{
+   background-color:#690;
+   border-color:#360;
+  } 
+  
+#d1{
+ background-color:#9CC;
+ border:1px solid #C39;
+ width:400px;
+  height:220px;
+  margin-top:0px;
+  z-index:1;
+   
+ }
+#d2{
+    background-color:#CC9;
+    border:1px solid #309;
+    display:none;
+    width:400px;
+    height:220px;
+    margin-top:0px;
+    z-index:1;
+ }
+#d3{
+   background-color:red;
+   border:1px solid #360;
+   display:none;
+   width:400px;
+   height:220px;
+   margin-top:0px;
+   z-index:1;
+ }
+ 
+#d4{
+  background-color:#690;
+  border:1px solid #360;
+  display:none;
+  width:400px;
+  height:220px;
+  margin-top:0px;
+  z-index:1;
+ }
+</style>
+<script language="javascript">
+function Tab(num)
+{
+    var i;
+    for(i=1;i<=4;i++)
+    {
+        if(i==num)
+           document.getElementById("d"+i).style.display="block";
+         else
+           document.getElementById("d"+i).style.display="none";
+    }
+}
+</script>
+
+<style>
+/* 下拉按钮样式 */
+.dropbtn {
+    color: blue;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+/* 容器 <div> - 需要定位下拉内容 */
+.dropdown {
+    position: relative;left:1500px; top:10px;
+}
+
+/* 下拉内容 (默认隐藏) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+}
+
+/* 下拉菜单的链接 */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* 鼠标移上去后修改下拉菜单链接颜色 */
+.dropdown-content a:hover {background-color: blue}
+
+/* 在鼠标移上去后显示下拉菜单 */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* 当下拉内容显示后修改下拉按钮的背景颜色 */
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+.dropdown-content {
+    right: 0;
+}
+</style>
+
+<style> 
+#table table{border:1px solid #F00} 
+#table td{padding:10px;}
+</style> 
+
+<style> 
+#table1 table{border:1px solid #F00} 
+#table1 td{padding:10px;}
+</style> 
+
+<script>
+function load()
+{  
+  document.getElementById("target").click(); 
+  document.getElementById("target1").click(); 
+} 
+function test(id)
+{ 
+	if (id == 'target' )
+	{
+		 document.getElementById("table").style.display = 'none' ;
+		 document.getElementById("table1").style.display = 'block' ;
+	}
+	else
+	{
+		 document.getElementById("table1").style.display = 'none' ;
+		 document.getElementById("table").style.display = 'block' ;
+	}
+}
+</script>
+
+<style type="text/css">
+	.my_left_category{
+	width:250px;
+	font-size:12px;
+	font-family:arial,sans-serif;
+	letter-spacing:2px;
+	}
+	.my_left_category h1{
+	background-image:url(spring_06.gif);
+	height:20px;
+	background-repeat:no-repeat;
+	font-size:14px;
+	font-weight:bold;
+	padding-left:15px;
+	padding-top:8px;
+	margin:0px;
+	color:#FFF;
+	}
+	.my_left_category .my_left_cat_list{
+	width:148px;
+	border-color:#b60134;
+	border-style:solid;
+	border-width:0px 1px 1px 1px;
+	line-height:13.5pt;
+	}
+	.my_left_category .my_left_cat_list h2 {
+	margin:0px;
+	padding:3px 5px 0px 9px;
+	}
+	.my_left_category .my_left_cat_list h2 a {
+	color:#d6290b;
+	font-weight:bold;
+	font-size:14px;
+	line-height:22px;
+	}
+	.my_left_category .my_left_cat_list h2 a:hover {
+	color:#d6290b;
+	font-weight:bold;
+	font-size:14px;
+	line-height:22px;
+	}
+	.my_left_category .h2_cat{
+	width:148px;
+	height:26px;
+	background-image:url(my_menubg.gif);
+	background-repeat:no-repeat;
+	line-height:26px;
+	font-weight:normal;
+	color:#333333;
+	position:relative;
+	}
+	.my_left_category .h2_cat_1{
+	width:148px;
+	height:26px;
+	background-image:url(my_menubg_1.gif);
+	background-repeat:no-repeat;
+	line-height:26px;
+	font-weight:normal;
+	color:#333333;
+	position:relative;
+	}
+	.my_left_category a{
+	font:12px;
+	text-decoration:none;
+	color:#333333;
+	}
+	.my_left_category a:hover{
+	text-decoration:underline;
+	color:#ff3333;
+	}
+	.my_left_category h3{
+	margin:0px;
+	padding:0px;
+	height:26px;
+	font-size:12px;
+	font-weight:normal;
+	display:block;
+	padding-left:8px;
+	}
+	.my_left_category h3 span{color:#999999; width:145px; float:right;}
+	.my_left_category h3 a{	line-height:26px;}
+	.my_left_category .h3_cat{
+	display:none;
+	width:204px;
+	position:absolute;
+	left:123px;
+	margin-top:-26px;
+	cursor:auto;
+	}
+	.my_left_category .shadow{
+	position:inherit;
+	background:url(shadow_04.gif) left top;
+	width:204px;
+	}
+	.my_left_category .shadow_border{
+	position:inherit;
+	width:200px;
+	border:1px solid #959595; margin-top:1px;
+	border-left-width:0px;
+	background:url(shadow_border.gif) no-repeat 0px 21px;
+	background-color:#ffffff;
+	margin-bottom:3px
+	}
+	.my_left_category .shadow_border ul{margin:0; padding:0; margin-left:15px}
+	.my_left_category .shadow_border ul li {
+	list-style:none;
+	padding-left:10px;
+	background-image:url(my_cat_sub_menu_dot.gif);
+	background-repeat:no-repeat;
+	background-position:0px 8px;
+	float:left;
+	width:75px;
+	height:26px;
+	overflow:hidden;
+	letter-spacing:0px;
+	}
+	.my_left_category .active_cat{ z-index:99;background-position:0 -25px;cursor:pointer;}
+	.my_left_category .active_cat h3 { font-weight:bold}
+	.my_left_category .active_cat h3 span{ display:none;}
+	.my_left_category .active_cat div{display:block;}
+</style>
+
+<style type="text/css">
+a:link {
+ text-decoration: none;
+}
+a:visited {
+ text-decoration: none;
+}
+a:hover {
+ text-decoration: underline;
+</style>
+
+</head>
+
+<body onload="load">
+
+<div id="header">
+
+	<div id="doc-view" style="position:absolute; left:3px; top:3px">
+			<div id="top-toolbar">
+				<a class="toolsite" href="http://12306.360.cn/?src=daohang_2" >抢火车票</a>
+				<span class="split">|</span>
+				<a class="toolsite" href="http://www.12377.cn/">举报中心</a>
+				<span class="split">|</span>
+			   <a class="toolsite" href="https://s.click.taobao.com/mpcVBqw" style="color:#f60;">天猫特价清仓</a>
+				<span class="split">|</span>
+			   <a class="toolsite" href="http://feedback.hao.360.cn/">反馈意见</a>
+				<span class="split">|</span>
+			   <a id="toolbar-themetrigger" class="toolsite" href="" onclick="return false">换肤</a>
+			</div>
+	</div>
+
+	<div class="dropdown" style="position:absolute; left:1180px; top:3px" >
+		<a href="http://news.baidu.com/ns?cl=2&rn=20&tn=news&word=" wdfield="word"  onmousedown="return c({'fm':'tab','tab':'news'})" >新闻&nbsp;</a>
+		<a href="http://tieba.baidu.com/f?kw=&fr=wwwt" wdfield="kw"  onmousedown="return c({'fm':'tab','tab':'tieba'})">贴吧&nbsp;</a>
+		<a href="http://zhidao.baidu.com/q?ct=17&pn=0&tn=ikaslist&rn=10&word=&fr=wwwt" wdfield="word"  onmousedown="return c({'fm':'tab','tab':'zhidao'})">知道&nbsp;</a>
+		<a href="http://music.baidu.com/search?fr=ps&ie=utf-8&key=" wdfield="key"  onmousedown="return c({'fm':'tab','tab':'music'})" style="color:#f60;">音乐&nbsp;</a>
+		<a href="http://image.baidu.com/search/index?tn=baiduimage&ps=1&ct=201326592&lm=-1&cl=2&nc=1&ie=utf-8&word=" wdfield="word"  onmousedown="return c({'fm':'tab','tab':'pic'})">图片&nbsp;</a>
+		<a href="http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=25&ie=utf-8&word=" wdfield="word"   onmousedown="return c({'fm':'tab','tab':'video'})">视频&nbsp;</a>
+		<a href="http://map.baidu.com/m?word=&fr=ps01000" wdfield="word"  onmousedown="return c({'fm':'tab','tab':'map'})">地图&nbsp;</a>
+		<a href="http://wenku.baidu.com/search?word=&lm=0&od=0&ie=utf-8" wdfield="word"  onmousedown="return c({'fm':'tab','tab':'wenku'})" >文库&nbsp;</a>
+		
+		<button class="dropbtn">设置</button>
+			<div class="dropdown-content">
+				 <a href="#">搜索设置</a>
+				 <a href="#">高级搜索</a>
+				 <a href="#">关闭预测</a>
+				 <a href="#">搜索历史</a>
+			 </div>
+		<a href="//www.baidu.com/more/"  onmousedown="return c({'fm':'tab','tab':'more'})" style="color:blue;">更多产品&nbsp;</a>
+	</div>
+	
+</div>
+
+<div id="content_left">
+<div class="my_left_category" style="position:absolute; left:0px; top:100px">
+	<h1>分类导航</h1>
+	<div class="my_left_cat_list">
+	<h2><a href="#">按网站类别</a></h2>
+	<div class="h2_cat" onmouseover="this.className='h2_cat active_cat'" onmouseout="this.className='h2_cat'">
+	<h3><a href="#">视频</a></h3>
+	<div class="h3_cat">
+		<div class="shadow">
+				<div class="shadow_border">
+					<ul>
+						<li><a href="#">腾讯视频</a></li>
+						<li><a href="#">优酷视频</a></li>
+						<li><a href="#">土豆视频</a></li>
+						<li><a href="#">爱奇艺视频</a></li>
+}
+a:active {
+ text-decoration: none;
+}
+					</ul>
+
+				</div>
+		</div>
+	</div>
+	</div>
+	<div class="h2_cat" onmouseover="this.className='h2_cat active_cat'" onmouseout="this.className='h2_cat'">
+	<h3><a href="http://51xuediannao.com">购物</a></h3>
+		<div class="h3_cat">
+			<div class="shadow">
+				<div class="shadow_border">
+					<ul>
+						<li><a href="#">天猫超市</a></li>
+						<li><a href="#">京东超市</a></li>
+						<li><a href="#">唯品会</a></li>
+						<li><a href="#">柚子街</a></li>
+						<li><a href="#">蘑菇街</a></li>
+						<li><a href="#">淘抢购</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<h3><a href="http://51xuediannao.com">理财</a></h3>
+
+	<!-- again -->
+	<h3><a href="http://51xuediannao.com">借钱</a></h3>
+	<div class="h2_cat" onmouseover="this.className='h2_cat active_cat'" onmouseout="this.className='h2_cat'">
+	<h3><a href="#" style="color:#ff3333;">综艺</a></h3>
+	<div class="h3_cat">
+		<div class="shadow">
+			<div class="shadow_border">
+				<ul>
+					<li><a href="#">脱口秀大会</a></li>
+					<li><a href="#">我们来了</a></li>
+					<li><a href="#">极速前进</a></li>
+					<li><a href="#">吐槽大会</a></li>
+					<li><a href="#">中餐厅</a></li>
+					<li><a href="#">非诚勿扰</a></li>
+					<li><a href="#">非常完美</a></li>
+					<li><a href="#">爱情保卫战</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	</div>
+	<div class="h2_cat" onmouseover="this.className='h2_cat active_cat'" onmouseout="this.className='h2_cat'">
+	<h3><a href="http://51xuediannao.com">娱乐</a></h3>
+		<div class="h3_cat">
+			<div class="shadow">
+				<div class="shadow_border">
+					<ul>
+						<li><a href="#">游戏</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="h2_cat" onmouseover="this.className='h2_cat active_cat'" onmouseout="this.className='h2_cat'">
+	<h3><a href="#">银行</a></h3>
+		<div class="h3_cat">
+			<div class="shadow">
+				<div class="shadow_border">
+					<ul>
+						<li><a href="#">建设银行</a></li>
+						<li><a href="#">农业银行</a></li>
+						<li><a href="#">工商银行</a></li>
+						<li><a href="#">中国银行</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="h2_cat_1" onmouseover="this.className='h2_cat_1 active_cat'" onmouseout="this.className='h2_cat_1'">
+	<h3><a href="#">热搜</a></h3>
+	</div>
+	<!-- again -->
+	<h2><a href="#">商城</a></h2>
+	<div class="h2_cat" onmouseover="this.className='h2_cat active_cat'" onmouseout="this.className='h2_cat'">
+	<h3><a href="#">低端价位</a></h3>
+		<div class="h3_cat">
+			<div class="shadow">
+				<div class="shadow_border">
+					<ul>
+						<li><a href="#">50元以下</a></li>
+						<li><a href="#">50-100元</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="h2_cat" onmouseover="this.className='h2_cat active_cat'" onmouseout="this.className='h2_cat'">
+	<h3><a href="#">中高端价位</a></h3>
+		<div class="h3_cat">
+			<div class="shadow">
+				<div class="shadow_border">
+					<ul>
+						<li><a href="#">100-150元</a></li>
+						<li><a href="#">150-200元</a></li>
+						<li><a href="#">200-300元</a></li>
+						<li><a href="#">300元以上</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<h2><a href="http://51xuediannao.com">教育</a></h2>
+	<h2><a href="http://51xuediannao.com">查询</a></h2>
+
+	</div>
+</div>
+</div>
+
+<div id="content_main">
+<div>
+<form name="search_form1" target="_blank" onsubmit="return gowhere1(this)">
+		<table width="860" height="360" border="0"  cellpadding="0" cellspacing="0" style=font-family:宋体>
+		<tr>
+		<td>
+			<TABLE cellPadding=0 cellSpacing=0>
+				<TD><image src="./2.png" style="position:absolute; left:300px; top:70px; "></TD>
+			</TABLE>
+			
+			<TABLE  style="position:absolute; left:60px; top:200px; ">
+			<TR>
+				<TD width="24%"> </TD>	
+				<TD width="80%">
+				<INPUT type=radio value=0><FONT  style="FONT-SIZE: 25px">新闻</FONT>              
+				<INPUT CHECKED  type=radio value=0><SPAN class=f12><FONT style="FONT-SIZE: 25px">网页</FONT></SPAN>
+				<INPUT type=radio value=1><SPAN class=f12><FONT  style="FONT-SIZE: 25px">mp3</FONT></SPAN>
+				<INPUT type=radio value=0><FONT  style="FONT-SIZE: 25px">贴吧</FONT>
+				<INPUT type=radio value=0><FONT  style="FONT-SIZE: 25px">图片</FONT>
+				<TABLE align=right border=0 cellPadding=0 cellSpacing=0 width="100%">
+						<TBODY>
+							<TR>
+								<TD>
+									<FONT style="FONT-SIZE: 2px">
+									<input id=word name=word size="50"></FONT> 
+									<input type="submit" value="百度搜索"> 
+								</TD>
+							</TR>     
+						</TBODY>   
+				</TABLE>
+				</TD>
+			</TR>	
+			</TABLE>
+		</td>
+		</tr>
+		</table>
+</form>
+</div>
+
+<div style="position:absolute; left:300px; top:400px">
+	<div id="head">
+		<ul>
+			 <li id="L1" onclick="Tab(1)"><a href="#">公告信息</a></li>
+			 <li id="L2" onclick="Tab(2)"><a href="#">今日热点</a></li>
+			 <li id="L3" onclick="Tab(3)"><a href="#">最新新闻</a></li>
+			 <li id="L4" onclick="Tab(4)"><a href="#">考试信息</a></li>
+		</ul>
+	</div>
+
+	<div id="d1">
+		<ul>
+		  <li>这里是最新公告信息</li>
+		  <li>这里是最新公告信息</li>
+		  <li>这里是最新公告信息</li>
+		  <li>这里是最新公告信息</li>
+		</ul>
+	</div>
+	
+	<div id="d2">
+		<ul>
+		  <li>这里是今日热点</li>
+		  <li>这里是今日热点</li>
+		  <li>这里是今日热点</li>
+		  <li>这里是今日热点</li>
+		</ul>
+	</div>
+	
+	<div id="d3">
+		<ul>
+		  <li>这里是最新新闻</li>
+		  <li>这里是最新新闻</li>
+		  <li>这里是最新新闻</li>
+		  <li>这里是最新新闻</li>
+		</ul>
+	</div>
+	
+	<div id="d4">
+		<ul>
+		  <li>这里是考试信息</li>
+		  <li>这里是考试信息</li>
+		  <li>这里是考试信息</li>
+		  <li>这里是考试信息</li>
+		</ul>
+	</div>
+</div>
+
+</div>
+
+<div id="content_right">
+<div id="table" style="position:absolute; top:400px; diaplay:none">
+<table  width="360" border="0" cellspacing="0" cellpadding="0"> 
+	<tr> 
+		<td width="105"><a href="#"><b>实时热点</b></a></td> 
+		<td width="181"><button id="target" onclick="test(id)">换一换</button> </td> 
+	</tr> 
+
+	<tr> 
+		<td><a href="#">不让座大妈坐腿上</a></td> 
+		<td><a href="#">张柏芝包飞机返港</td> 
+	</tr> 
+
+	<tr> 
+		<td><a href="#">让座太慢被掌掴</td> 
+		<td><a href="#">夜莺眼睛被戳瞎</td> 
+	</tr> 
+	
+	<tr> 
+		<td><a href="#">俄炸死IS头目</td> 
+		<td><a href="#">18号台风泰利</td> 
+	</tr> 
+	
+	
+	<tr> 
+		<td><a href="#">英拉乘车出逃画面</td> 
+		<td><a href="#">宝马追尾出警警车</td> 
+	</tr> 
+	
+	<tr> 
+		<td><a href="#">埃及发现古墓</td> 
+		<td><a href="#">22万遗落高铁</td> 
+	</tr> 
+	
+	<tr> 
+		<td><a href="#">泰迪正式入名人堂</td> 
+		<td><a href="#">李晓霞大婚</td> 
+	</tr> 
+	
+	<tr> 
+		<td><a href="#">巴西多车相撞</td> 
+		<td><a href="#">韩媒回顾萨德部署</td> 
+	</tr> 
+	
+	<tr> 
+		<td><a href="#">张玉华老将军逝世</td> 
+		<td><a href="#">陈伟霆大秀肌肉照</td> 
+	</tr> 
+</table> 
+</div>
+
+
+<div id="table1" style="position:absolute; top:400px; diaplay:none">
+<table  width="360" border="0" cellspacing="0" cellpadding="0"> 
+	<tr> 
+		<td width="105"><a href="#"><b>实时热点</b></a></td> 
+		<td width="181"><button id="target1" onclick="test(id)">换一换</button> </td> 
+	</tr> 
+
+	<tr> 
+		<td><a href="#">11111111</a></td> 
+		<td><a href="#">2222222</a></td> 
+	</tr> 
+	<tr> 
+		<td><a href="#">4444444444</a></td> 
+		<td><a href="#">5555555555</a></td> 
+	</tr> 
+	
+	<tr> 
+		<td><a href="#">333333333</a></td> 
+		<td><a href="#">666666666</a></td> 
+	</tr> 
+	
+	
+	<tr> 
+		<td><a href="#">99999999999999</a></td> 
+		<td><a href="#">77777777777777</a></td> 
+	</tr> 
+	
+	<tr> 
+		<td><a href="#">sguwidswokixs</a></td> 
+		<td><a href="#">ghdtrgfcdffdf</a></td> 
+	</tr> 
+	
+	<tr> 
+		<td><a href="#">888888888888</a></td> 
+		<td><a href="#">7yjyhgfhhnfd</a></td> 
+	</tr> 
+	
+	<tr> 
+		<td><a href="#">gfbhdghyrtyt</a></td> 
+		<td><a href="#">thygfhftyry7</a></td> 
+	</tr> 
+	
+	<tr> 
+		<td><a href="#">tyghtyjtjuye</a></td> 
+		<td><a href="#">ytryuyjuyjut</a></td> 
+	</tr> 
+	
+	</table> 
+</div>
+
+</div>
+
+<div id="footer"> 
+	<p id="lh">
+		<a id="setf" href="//www.baidu.com/cache/sethelp/help.html" onmousedown="return ns_c({'fm':'behs','tab':'favorites','pos':0})" target="_blank">把百度设为主页&nbsp;&nbsp;</a>
+		<a onmousedown="return ns_c({'fm':'behs','tab':'tj_about'})" href="http://home.baidu.com" style="color:#fff;">关于百度&nbsp;&nbsp;</a>
+		<a onmousedown="return ns_c({'fm':'behs','tab':'tj_about_en'})" href="http://ir.baidu.com">About&nbsp;Baidu</a>
+		<a href="http://www.baidu.com/duty/" onmousedown="return ns_c({'fm':'behs','tab':'tj_duty'})">使用百度前必读</a>
+		<a onmousedown="return ns_c({'fm':'behs','tab':'tj_tuiguang'})" href="http://e.baidu.com/?refer=888">百度推广&nbsp;&nbsp;</a></p><p id="cp">&copy;2017&nbsp;Baidu&nbsp;
+		<a href="http://jianyi.baidu.com/" class="cp-feedback" onmousedown="return ns_c({'fm':'behs','tab':'tj_homefb'})">意见反馈&nbsp;</a>&nbsp;京ICP证030173号&nbsp;<i class="c-icon-icrlogo"></i>&nbsp;
+		<a id="jgwab"  target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11000002000001">京公网安备11000002000001号&nbsp;</a>
+		<i class="c-icon-jgwablogo"></i>
+	</p>
+</div>
+
+</body>
+</html>

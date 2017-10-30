@@ -1,0 +1,344 @@
+# 1 list<T>
+
+List<T>类是 ArrayList 类的泛型等效类。该类使用大小可按需动态增加的数组实现 IList<T> 泛型接口。
+泛型的好处:它为使用c#语言编写面向对象程序增加了极大的效力和灵活性。不会强行对值类型进行装箱和拆箱，或对引用类型进行向下强制类型转换，所以性能得到提高。
+
+性能注意事项：
+
+在决定使用IList<T> 还是使用ArrayList类（两者具有类似的功能）时，记住IList<T> 类在大多数情况下执行得更好并且是类型安全的。
+
+如果对IList<T> 类的类型 T 使用引用类型，则两个类的行为是完全相同的。但是，如果对类型 T 使用值类型，则需要考虑实现和装箱问题。
+
+“添加到 ArrayList 中的任何引用或值类型都将隐式地向上强制转换为 Object。如果项是值类型，则必须在将其添加到列表中时进行装箱操作，在检索时进行取消装箱操作。强制转换以及装箱和取消装箱操作都会降低性能；在必须对大型集合进行循环访问的情况下，装箱和取消装箱的影响非常明显。”
+
+<1>List的基础、常用方法：
+
+声明： 
+
+List<T> mList = new List<T>();   T为列表中元素类型，现在以string类型作为例子
+
+E.g.：List<string> mList = new List<string>();
+
+List<T> testList =new List<T> (IEnumerable<T> collection);以一个集合作为参数创建List
+
+E.g.：string[] temArr = { "Ha", "Hunter", "Tom", "Lily", "Jay", "Jim", "Kuku", "Locu" };
+List<string> testList = new List<string>(temArr);
+
+添加元素:List. Add(T item)   添加一个元素   E.g.：mList.Add("John");
+
+List. AddRange(IEnumerable<T> collection)   添加一组元素
+
+E.g.：string[] temArr = { "Ha","Hunter", "Tom", "Lily", "Jay", "Jim", "Kuku",  "Locu" };
+mList.AddRange(temArr);
+
+Insert(int index, T item);    在index位置添加一个元素E.g.：mList.Insert(1, "Hei");
+
+遍历List中元素:T的类型与mList声明时一样
+
+foreach (T element in mList)  
+{
+​    Console.WriteLine(element);
+}
+
+foreach (string s in mList)
+{
+​    Console.WriteLine(s);
+}
+
+ List. Remove(T item)删除一个值    E.g.：mList.Remove("Hunter");
+
+List. RemoveAt(int index);   删除下标为index的元素   E.g.：mList.RemoveAt(0);
+
+List. RemoveRange(int index, int count);   从下标index开始，删除count个元素
+
+E.g.：mList.RemoveRange(3, 2);
+
+判断某个元素是否在该List中：List. Contains(T item)   返回true或false
+
+E.g.：
+
+if (mList.Contains("Hunter"))
+{
+​    Console.WriteLine("There is Hunter in the list");
+}
+else
+{
+​    mList.Add("Hunter");
+​    Console.WriteLine("Add Hunter successfully.");
+}
+
+List. Sort ()   默认是元素第一个字母按升序   E.g.：mList.Sort();
+
+给List里面元素顺序反转：List. Reverse ()   可以与List. Sort ()配合使用，达到想要的效果
+
+List清空：List. Clear ()   E.g.： mList.Clear();
+
+获得List中元素数目： List. Count ()    返回int值
+
+E.g.：int count = mList.Count();
+Console.WriteLine("The num of elements in the list: " +count);
+
+举例用的List：
+
+string[] temArr = { Ha","Hunter", "Tom", "Lily", "Jay", "Jim", "Kuku", " "Locu" };
+
+mList.AddRange(temArr);
+List.Find 方法：搜索与指定谓词所定义的条件相匹配的元素，并返回整个 List 中的第一个匹配元素。 
+public T Find(Predicate<T> match);
+
+Predicate是对方法的委托，如果传递给它的对象与委托中定义的条件匹配，则该方法返回 true。当前 List 的元素被逐个传递给Predicate委托，并在 List 中向前移动，从第一个元素开始，到最后一个元素结束。当找到匹配项时处理即停止。
+
+Predicate 可以委托给一个函数或者一个拉姆达表达式:
+
+委托给拉姆达表达式：
+
+E.g.：
+
+string listFind = mList.Find(name =>  //name是变量，代表的是mList中元素，自己设定
+{      
+   if (name.Length > 3)
+   {
+​	  return true;
+   }
+  return false;
+});
+Console.WriteLine(listFind);     //输出是Hunter
+
+E.g.：
+string listFind1 = mList.Find(ListFind);  //委托给ListFind函数
+Console.WriteLine(listFind);    //输出是Hunter
+ListFind函数： 
+
+public bool ListFind(string name)
+ {
+​	if (name.Length > 3)
+​	{
+  		  return true;
+​	}
+​	return false;
+ }
+
+用法与List.Find相同。
+
+List.TrueForAll方法：  确定是否 List 中的每个元素都与指定的谓词所定义的条件相匹配。
+
+public bool TrueForAll(Predicate<T> match);
+
+委托给拉姆达表达式：
+
+E.g.：
+
+bool flag = mList.TrueForAll(name =>
+{
+  	  if (name.Length > 3)
+   	 {
+​		 return true;
+​	  }
+​         else
+   	 {
+​		 return false;
+  	  }
+});
+Console.WriteLine("True for all:  "+flag);  //flag值为false
+
+E.g.：
+
+bool flag = mList.TrueForAll(ListFind); //委托给ListFind函数
+Console.WriteLine("True for all:  "+flag);  //flag值为false
+这两种方法的结果是一样的。
+List.FindAll方法：检索与指定谓词所定义的条件相匹配的所有元素。
+
+public List<T> FindAll(Predicate<T> match);
+
+E.g.：
+
+List<string> subList = mList.FindAll(ListFind); //委托给ListFind函数
+foreach (string s in subList)
+ {
+​	Console.WriteLine("element in subList: "+s);
+ }
+
+E.g.：
+
+IEnumerable<string> takeList=  mList.Take(5);
+foreach (string s in takeList)
+ {
+​	  Console.WriteLine("element in takeList: " + s);
+ }
+
+这时takeList存放的元素就是mList中的前5个
+
+# 2 Array、arrayList、List的优缺点       
+
+数组
+优点：比如说数组在内存中是连续存储的，所以它的索引速度是非常的快，而且赋值与修改元素也很简单
+
+缺点：在数组的两个数据间插入数据也是很麻烦的。还有我们在声明数组的时候，必须同时指明数组的长度，数组的长度过长，会造成内存浪费，数组和长度过短，会造成数据溢出的错误。这样如果在声明数组时我们并不清楚数组的长度，就变的很棘手了。
+
+ArrayList
+ArrayList是.Net Framework提供的用于数据存储和检索的专用类，它是命名空间System.Collections下的一部分。它的大小是按照其中存储的数据来动态扩充与收缩的。所以，我们在声明ArrayList对象时并不需要指定它的长度。ArrayList会把所有插入其中的数据都当作为object类型来处理。这样，在我们使用ArrayList中的数据来处理问题的时候，很可能会报类型不匹配的错误，也就是说ArrayList不是类型安全的。既使我们保证在插入数据的时候都很小心，都有插入了同一类型的数据，但在使用的时候，我们也需要将它们转化为对应的原类型来处理。这就存在了装箱与拆箱的操作，会带来很大的性能损耗。
+
+list
+
+正是因为ArrayList存在不安全类型与装箱拆箱的缺点，所以在C#2.0后出现了泛型的概念。而List类是ArrayList类的泛型等效类。它的大部分用法都与ArrayList相似，因为List类也继承了IList接口。最关键的区别在于，在声明List集合时，我们同时需要为其声明List集合内数据的对象类型。
+
+# 3 Dictionary
+
+Dictionary<TKey,TValue>
+
+必须包含名空间System.Collection.Generic 
+Dictionary里面的每一个元素都是一个键值对(由二个元素组成：键和值) 
+键必须是唯一的,而值不需要唯一的 
+键和值都可以是任何类型(比如：string, int, 自定义类型，等等) 
+通过一个键读取一个值的时间是接近O(1) 
+
+属性：
+
+Comparer   获取用于确定字典中的键是否相等的 IEqualityComparer<T>。
+
+Count   获取包含在 Dictionary<TKey, TValue> 中的键/值对的数目。
+
+Item  （索引）获取或设置与指定的键相关联的值。
+
+Keys    获取包含 Dictionary<TKey, TValue> 中的键的集合。
+
+Values  获取包含 Dictionary<TKey, TValue> 中的值的集合。
+
+方法：
+
+Add   将指定的键和值添加到字典中。
+
+Clear  从 Dictionary<TKey, TValue> 中移除所有的键和值。
+
+ContainsKey  确定 Dictionary<TKey, TValue> 是否包含指定的键。
+
+ContainsValue  确定 Dictionary<TKey, TValue> 是否包含特定值。
+
+Equals(Object)   确定指定的对象是否等于当前对象。 （继承自 Object。）
+
+Finalize  允许对象在“垃圾回收”回收之前尝试释放资源并执行其他清理操作。 （继承自 Object。）
+
+GetEnumerator   返回循环访问 Dictionary<TKey, TValue> 的枚举数。
+
+GetHashCode  作为默认哈希函数。 （继承自 Object。）
+
+GetObjectData    实现System.Runtime.Serialization.ISerializable 接口，并返回序列化 Dictionary<TKey, TValue> 实例所需的数据。
+
+GetType  获取当前实例的 Type。（继承自 Object。）
+
+MemberwiseClone  创建当前 Object 的浅表副本。（继承自 Object。）
+
+OnDeserialization  实现 System.Runtime.Serialization.ISerializable 接口，并在完成反序列化之后引发反序列化事件。
+
+Remove   从 Dictionary<TKey, TValue> 中移除所指定的键的值。
+
+ToString   返回表示当前对象的字符串。 （继承自 Object。）
+
+TryGetValue  获取与指定的键相关联的值。
+
+# 4 as 和 is 运算符 	 	 	 		                                           	  	 	 	 	 
+
+ C#是一门强类型语言，一般情况下，我们最好避免将一个类型强制转换为其他类型，但有些时候难免要进行类型转换。
+
+先想想究竟哪些操作可以进行类型转换,一般我们都有以下选择： 
+
+- 使用as操作符转换，
+- 使用传统C风格的强制转型
+- 使用is来做一个转换测试，然后再使用as操作符或者强制转换
+
+正确的选择应该是尽可能地使用as操作符，因为它比强制转型要安全，而且在运行时层面也有比较好的效率（注意的是as和is操作符都不执行任何用户自定义的转换，只有当运行时类型与目标转换类型匹配时，它们才会转换成功）。
+
+C# 提供 is 和 as运算符，使你可以在实际执行强制转换之前测试兼容性。由于对象是多态的，因此基类类型的变量可以保存派生类型。  若要访问派生类型的方法，需要将值强制转换回该派生类型。  不过，在这些情况下，如果只尝试进行简单的强制转换，会导致引发InvalidCastException的风险。  这就是 C# 提供 is 和 as运算符的原因。  您可以使用这两个运算符来测试强制转换是否会成功，而没有引发异常的风险。  通常，as运算符更高效一些，因为如果可以成功进行强制转换，它会实际返回强制转换值。  而 is 运算符只返回一个布尔值。  因此，如果只想确定对象的类型，而无需对它进行实际强制转换，则可以使用 is 运算符。 
+
+as和强制转换之间最大的区别就在于如何处理用户自定义的转换。操作符 as和 is 都只检查被转换对象的运行时类型，并不执行其他的操作。如果被转换对象的运行时类型既不是所转换的目标类型，也不是其派生类型，那么转型将告失败。但是强制转型则会使用转换操作符来执行转型操作，这包括任何内建的数值转换（如：long转int）。
+
+ 一般情况我们应该先考虑使用as进行类型转换，然后再考虑使用is,最后才考虑使用强制转换。
+
+|              |   as    | 强制转换 |
+| ------------ | :-----: | :--: |
+| 转换失败是否抛出异常   |   No    | Yes  |
+| 支持值类型和引用类型转换 | 只支持引用类型 | Yes  |
+
+# 5 foreach
+
+foreach在数组集合的遍历时会被经常用到，例如：  
+
+```c#
+string[] strs = new string[] { "red", "green","blue" }; 
+foreach (var item in strs)  
+{          
+  Console.WriteLine(item);  
+}  
+```
+
+使用foreach做遍历确实很方便，然而并不是每一种类型都能使用foreach进行遍历操作，只有实现了IEnumerable接口的类（也叫做可枚举类型）才能进行foreach的遍历操作,集合和数组已经实现了这个接口，所以能进行foreach的遍历操作
+
+IEnumerable叫做可枚举接口，它的成员只有一个  
+
+- GetEnumerator()返回一个枚举器对象，即实现了IEnumerator接口的类的实例，实现IEnumerator接口的枚举器包含3个函数成员：
+
+
+- Current属性
+- MoveNext()方法
+- Reset()方法
+
+Current属性为只读属性，返回枚举序列中的当前位置，MoveNext()把枚举器的位置前进到下一项，返回布尔值，新的位置若是有效的，返回true,否则返回false,ReSet()将位置重置为原始状态。 
+
+foreach语法格式如下：
+
+foreach(type identifier in expression)
+{
+​    embedded-statement
+}
+
+type（类型）和identifier（标识符）用于声明循环变量，expression（表达式）对应集合。
+
+每执行一次内嵌语句，循环变量就依次取集合中的一个元素代入其中。在这里，循环变量是一个只读型局部变量，如果试图改变它的值或将它作为一个ref或out类型的参数传递，都将引发编译时错误。
+
+foreach语句中的expression必须是集合类型，如果该集合的元素类型与循环变量类型不一致，则必须有一个显式定义的从集合中的元素类型到循环变量元素类型的显式转换。
+
+foreach语句的执行顺序如下：
+
+（1）计算集合表达式的值并生成一种集合类型的实例。
+
+（2）调用GetEnumerator方法得到一个枚举实例的值，返回的枚举值将存放在一个临时局部变量中。
+
+（3）调用临时局部变量的MoveNext方法，以获取下一个枚举元素。
+
+（4）如果MoveNext方法的返回值为false，则表明已为集合中的所有元素完成循环，控制传递给foreach块后的下一条语句，否则继续执行。
+
+（5）计算临时局部变量的Current属性以获取当前枚举值并将其转换为foreach语句中规定的变量类型，并将结果存储在迭代变量中，以便在循环体内可以访问该变量的值。
+
+（6）执行循环体包含的语句，然后转到第（3）步开始下一轮循环。
+
+ # 6 FileStream
+
+FileStream对象表示在磁盘或网络路径上指向文件的流。这个类提供了在文件中读写字节的方法，但经常使用StreamReader或StreamWriter执行这些功能。这是因为FileStream类操作的是字节和字节数组，而Stream类操作的是字符数据。字符数据易于使用，但是有些操作，比如随机文件访问(访问文件中间某点的数据)，就必须由FileStream对象执行。
+
+还有几种方法可以创建FileStream对象。构造函数具有许多不同的重载版本，最简单的构造函数仅仅带有两个参数，即文件名和FileMode枚举值。FileMode枚举有几个成员，规定了如何打开或创建文件。第三个参数是FileAccess枚举的一个成员，它指定了流的作用。FileAccess枚举的成员如下表所示。
+
+| 成   员     | 说    明    |
+| --------- | --------- |
+| Read      | 打开文件，用于只读 |
+| Write     | 打开文件，用于只写 |
+| ReadWrite | 打开文件，用于读写 |
+
+对文件进行不是FileAccess枚举成员指定的操作会导致抛出异常。此属性的作用是，基于用户的身份验证级别改变用户对文件的访问权限。
+
+在FileStream构造函数不使用FileAccess枚举参数的版本中，使用默认值FileAccess. ReadWrite。
+
+FileMode枚举成员如下表所示。使用每个值会发生什么，取决于指定的文件名是否表示已有的文件。注意这个表中的项表示创建流时该流指向文件中的位置，除非特别说明，否则流就指向文件的开头。
+
+| 成    员       | 文 件 存 在                                 | 文件不存在                             |
+| ------------ | --------------------------------------- | --------------------------------- |
+| Append       | 打开文件，流指向文件的末尾，只能与枚举FileAccess.Write联合使用 | 创建一个新文件。只能与枚举FileAccess.Write联合使用 |
+| Create       | 删除该文件，然后创建新文件                           | 创建新文件                             |
+| CreateNew    | 抛出异常                                    | 创建新文件                             |
+| Open         | 打开现有的文件，流指向文件的开头                        | 抛出异常                              |
+| OpenOrCreate | 打开文件，流指向文件的开头                           | 创建新文件                             |
+| Truncate     | 打开现有文件，清除其内容。流指向文件的开头，保留文件的初始创建日期       | 抛出异常                              |
+
+File和FileInfo类都提供了OpenRead()和OpenWrite()方法，更易于创建FileStream对象。前者打开了只读访问的文件，后者只允许写入文件。这些都提供了快捷方式，因此不必以FileStream构造函数的参数形式提供前面所有的信息。
+
+
+

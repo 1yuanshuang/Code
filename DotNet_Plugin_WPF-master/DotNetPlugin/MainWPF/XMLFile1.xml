@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Data xmlns="">
+  <Grade Text="我的系统">
+    <Class Name="甲班">
+      <Group Name="A组">
+      </Group>
+      <Group Name="B组">
+      </Group>
+      <Group Name="C组">
+      </Group>
+    </Class>
+    <dllPath>C:\Users\y0019.SYNTHFLEX\Desktop\DotNet_Plugin_WPF-master1\DotNet_Plugin_WPF-master\DotNetPlugin\MainWPF\bin\Debug\plugins\PluginDLL.dll</dllPath>
+    <fun>PluginDLL.Plugin</fun>
+  </Grade>
+
+  <Grade Text="数据和邻居">
+    <Class Name="甲班">
+      <Group Name="A组">
+      </Group>
+      <Group Name="B组">
+      </Group>
+      <Group Name="C组">
+      </Group>
+    </Class>
+    <Class Name="乙班">
+      <Group Name="A组">
+      </Group>
+      <Group Name="B组">
+      </Group>
+      <Group Name="C组">
+      </Group>
+    </Class>
+
+    <dllPath>C:\Users\y0019.SYNTHFLEX\Desktop\DotNet_Plugin_WPF-master1\DotNet_Plugin_WPF-master\DotNetPlugin\MainWPF\bin\Debug\plugins\PluginDLL2.dll</dllPath>
+    <fun>PluginDLL2.Plugin</fun>
+
+  </Grade>
+
+  <Grade Text="设备和接口">
+    <Class Name="甲班">
+      <Group Name="A组">
+      </Group>
+      <Group Name="B组">
+      </Group>
+      <Group Name="C组">
+      </Group>
+    </Class>
+    <Class Name="乙班">
+      <Group Name="A组">
+      </Group>
+      <Group Name="B组">
+      </Group>
+      <Group Name="C组">
+      </Group>
+    </Class>
+  </Grade>
+
+  <Grade Text="远程系统">
+    <Class Name="甲班">
+      <Group Name="A组">
+      </Group>
+      <Group Name="B组">
+      </Group>
+      <Group Name="C组">
+      </Group>
+    </Class>
+    <Class Name="乙班">
+      <Group Name="A组">
+      </Group>
+      <Group Name="B组">
+      </Group>
+      <Group Name="C组">
+      </Group>
+    </Class>
+  </Grade>
+
+</Data>

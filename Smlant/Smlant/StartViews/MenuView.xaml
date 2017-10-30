@@ -1,0 +1,29 @@
+﻿<UserControl x:Class="Smlant.StartViews.MenuView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"              
+             xmlns:Event="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
+             xmlns:GalaCommand="clr-namespace:GalaSoft.MvvmLight.Command;assembly=GalaSoft.MvvmLight.Extras.WPF4"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    
+    <Grid>
+        <TreeView ItemsSource="{Binding DataSource}" x:Name="trv_Menu" Margin="5">
+            <TreeView.ItemTemplate>
+                <HierarchicalDataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="..\..\Resource\Menu.png" Margin="2"/>
+                        <TextBlock Text="{Binding Name}" Margin="2"/>
+                    </StackPanel>
+                </HierarchicalDataTemplate>
+            </TreeView.ItemTemplate>
+            <Event:Interaction.Triggers>
+                <Event:EventTrigger EventName="SelectedItemChanged" SourceName="trv_Menu">
+                    <GalaCommand:EventToCommand Command="{Binding ShowContentCommand}"
+                                               CommandParameter="{Binding ElementName=trv_Menu,Path=SelectedItem}"/>  
+                </Event:EventTrigger>
+            </Event:Interaction.Triggers>
+        </TreeView>
+    </Grid>
+</UserControl>

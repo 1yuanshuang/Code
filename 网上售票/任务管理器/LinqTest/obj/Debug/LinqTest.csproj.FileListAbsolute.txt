@@ -1,0 +1,9 @@
+c:\users\y0019.synthflex\documents\visual studio 2017\Projects\LinqTest\LinqTest\bin\Debug\LinqTest.exe.config
+c:\users\y0019.synthflex\documents\visual studio 2017\Projects\LinqTest\LinqTest\bin\Debug\LinqTest.exe
+c:\users\y0019.synthflex\documents\visual studio 2017\Projects\LinqTest\LinqTest\bin\Debug\LinqTest.pdb
+c:\users\y0019.synthflex\documents\visual studio 2017\Projects\LinqTest\LinqTest\obj\Debug\LinqTest.csprojResolveAssemblyReference.cache
+c:\users\y0019.synthflex\documents\visual studio 2017\Projects\LinqTest\LinqTest\obj\Debug\LinqTest.Properties.Resources.resources
+c:\users\y0019.synthflex\documents\visual studio 2017\Projects\LinqTest\LinqTest\obj\Debug\LinqTest.csproj.GenerateResource.Cache
+c:\users\y0019.synthflex\documents\visual studio 2017\Projects\LinqTest\LinqTest\obj\Debug\LinqTest.exe
+c:\users\y0019.synthflex\documents\visual studio 2017\Projects\LinqTest\LinqTest\obj\Debug\LinqTest.pdb
+c:\users\y0019.synthflex\documents\visual studio 2017\Projects\LinqTest\LinqTest\obj\Debug\LinqTest.Form1.resources
