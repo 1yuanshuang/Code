@@ -1,0 +1,6 @@
+c:\users\administrator\documents\visual studio 2013\Projects\TestDTD\TestDTD\bin\Debug\TestDTD.exe.config
+c:\users\administrator\documents\visual studio 2013\Projects\TestDTD\TestDTD\obj\Debug\TestDTD.csprojResolveAssemblyReference.cache
+c:\users\administrator\documents\visual studio 2013\Projects\TestDTD\TestDTD\bin\Debug\TestDTD.exe
+c:\users\administrator\documents\visual studio 2013\Projects\TestDTD\TestDTD\bin\Debug\TestDTD.pdb
+c:\users\administrator\documents\visual studio 2013\Projects\TestDTD\TestDTD\obj\Debug\TestDTD.exe
+c:\users\administrator\documents\visual studio 2013\Projects\TestDTD\TestDTD\obj\Debug\TestDTD.pdb
