@@ -1,0 +1,6 @@
+c:\users\y0019.synthflex\documents\visual studio 2012\Projects\TestSchema\TestSchema\bin\Debug\TestSchema.exe.config
+c:\users\y0019.synthflex\documents\visual studio 2012\Projects\TestSchema\TestSchema\bin\Debug\TestSchema.exe
+c:\users\y0019.synthflex\documents\visual studio 2012\Projects\TestSchema\TestSchema\bin\Debug\TestSchema.pdb
+c:\users\y0019.synthflex\documents\visual studio 2012\Projects\TestSchema\TestSchema\obj\Debug\TestSchema.exe
+c:\users\y0019.synthflex\documents\visual studio 2012\Projects\TestSchema\TestSchema\obj\Debug\TestSchema.pdb
+c:\users\y0019.synthflex\documents\visual studio 2012\Projects\TestSchema\TestSchema\obj\Debug\TestSchema.csprojResolveAssemblyReference.cache

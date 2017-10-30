@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="schema.xsd">
+  	 <foo>1</foo>
+     <!--<foo>a</foo>-->
+</root>
+
+<!--<?xml version="1.0"?>
+-->
+<!--XML file using a DTD-->
+<!--
+<!DOCTYPE store [
+  <!ELEMENT store (item)*>
+  <!ELEMENT item (name,dept,price)>
+  <!ATTLIST item type CDATA  #REQUIRED>
+  <!ELEMENT dept (#PCDATA)>
+  <!ELEMENT name (#PCDATA)>
+  <!ELEMENT price (#PCDATA)>
+]>
+<store>
+  <item type="supplies">
+    <name>paint</name>
+    <dept>ewtui</dept>
+    <price>16.95</price>
+  </item>
+</store>-->
