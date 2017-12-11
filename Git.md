@@ -441,5 +441,5 @@ git pull --rebase origin master执行上面代码后可以看到本地代码库�
 
   ```
    $ git tag -d v0.9
-   $ git push origin :refs/tags/v0.9
+   $ git push origin :refs/tags/v0.9 
   ```
